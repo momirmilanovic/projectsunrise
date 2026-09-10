@@ -1,0 +1,120 @@
+﻿"Name","Folder","Priority","Status","Objective","Precondition","Labels","Coverage","Test Script (Plain Text)"
+"Signed-in customer completes an order end to end","/Toolshop/Checkout","High","Draft","Verify that an authenticated customer with a populated cart can pass every step of the checkout flow, confirm the order, and that a corresponding invoice is created.","1. Database freshly seeded (php artisan migrate:fresh --seed).
+2. Application reachable at http://localhost:4200.
+3. User U-customer (customer@practicesoftwaretesting.com) is signed in.
+4. Cart CART-1 contains exactly one in-stock product at quantity 1.
+5. No prior invoice exists for U-customer in this run.","toolshop;checkout;e2e;revenue-path","KAN-18","1. Open the cart from the cart icon in the header.
+   Test data: CART-1
+   Expected: Cart shows one line with the expected product name, quantity 1, unit price, and a line total equal to the unit price.
+
+2. Record the unit price and the displayed order total.
+   Expected: Order total equals the single line total. No discount or shipping line is present.
+
+3. Proceed to checkout.
+   Expected: The checkout stepper advances past the cart step; the sign-in step is shown as already satisfied for the signed-in identity.
+
+4. Continue to the billing address step.
+   Expected: The billing address form is displayed with every mandatory field visible.
+
+5. Populate every mandatory billing field with ADDR-VALID and continue.
+   Test data: ADDR-VALID
+   Expected: No validation message is shown. The payment step becomes reachable.
+
+6. Select a payment method and populate its required fields.
+   Expected: The method's field set is displayed; the confirm action becomes available.
+
+7. Confirm the order.
+   Expected: An order confirmation is displayed. The order reference shown is recorded for the final step.
+
+8. Open the cart from the header and reload the page.
+   Expected: The cart contains no lines.
+
+9. Call GET /invoices with U-customer's bearer token.
+   Expected: An invoice matching the recorded reference is present, attributed to U-customer, with a total equal to the recorded order total."
+"Guest is forced to sign in before the billing step","/Toolshop/Checkout","High","Draft","Verify that an unauthenticated visitor holding a populated cart cannot reach the billing address or payment steps, and that no invoice can be created without authentication.","1. Database freshly seeded.
+2. Browser session has no authentication cookie and empty localStorage.
+3. Cart CART-1 contains one in-stock product at quantity 1, added as a guest.","toolshop;checkout;permission","KAN-18","1. Confirm the session is unauthenticated: the header shows the signed-out state.
+   Test data: U-guest
+   Expected: No account name is displayed; a sign-in entry point is available.
+
+2. Open the cart and proceed to checkout.
+   Test data: CART-1
+   Expected: The cart step is passed. The flow stops at the sign-in step.
+
+3. Without signing in, attempt to advance to the next step.
+   Expected: The flow does not advance. The billing address form is not displayed.
+
+4. Attempt to reach the billing step by direct URL navigation.
+   Expected: The billing step is not rendered. The user is returned to the sign-in step or to the cart. No payment method selector is reachable.
+
+5. Reload the page and repeat the advance attempt.
+   Expected: Behaviour is unchanged; the block is not a one-time client-side guard."
+"Order total equals the sum of line totals","/Toolshop/Checkout","High","Draft","Verify that every line total equals unit price multiplied by quantity, and that the displayed order total is the exact sum of the line totals with no rounding drift.","1. Database freshly seeded.
+2. U-customer is signed in.
+3. Cart CART-MULTI contains three distinct products; at least one has a unit price whose cent value is not divisible by its quantity.
+4. Quantities are 1, 2 and 3 across the three lines.","toolshop;checkout;calculation","KAN-18","1. Open the cart and record the unit price and quantity of each of the three lines.
+   Test data: CART-MULTI
+   Expected: Three distinct lines are shown, each with a visible unit price and quantity.
+
+2. For line 1, compare the displayed line total against unit price x quantity.
+   Expected: The displayed line total equals the computed value to the cent.
+
+3. Repeat the comparison for line 2.
+   Expected: The displayed line total equals the computed value to the cent.
+
+4. Repeat the comparison for line 3.
+   Expected: The displayed line total equals the computed value to the cent.
+
+5. Compare the displayed order total against the sum of the three computed line totals.
+   Expected: The order total equals the sum to the cent, with no rounding drift.
+
+6. Call GET /carts/{cartId} and compare the API totals against the displayed values.
+   Expected: API and UI agree on every line total and on the order total."
+"Cart quantity below 1 is rejected","/Toolshop/Checkout","Medium","Draft","Verify that quantity values below the valid lower bound of 1 are rejected, that the previously valid quantity is retained, and that the order total is not altered.","1. Database freshly seeded.
+2. U-customer is signed in.
+3. Cart CART-1 contains one product at quantity 1.
+4. The order total displayed at the start is recorded as T.","toolshop;checkout;boundary","KAN-18","1. Open the cart and record the line quantity and order total T.
+   Test data: CART-1
+   Expected: Quantity is 1; order total T equals the unit price.
+
+2. Set the line quantity to 0 and submit the change.
+   Test data: quantity = 0
+   Expected: The change is rejected. VERIFY the exact validation message text before finalising this assertion.
+
+3. Inspect the line quantity and the order total.
+   Expected: Quantity is still 1. Order total is still T.
+
+4. Set the line quantity to -1 and submit the change.
+   Test data: quantity = -1
+   Expected: The change is rejected, with the same handling as the quantity 0 case.
+
+5. Inspect the line quantity and the order total.
+   Expected: Quantity is still 1. Order total is still T.
+
+6. Reload the page.
+   Expected: Quantity is 1 and order total is T - the rejection was applied server-side, not only in the browser.
+
+7. Call PUT /carts/{cartId}/product/quantity with quantity 0, bypassing the UI.
+   Test data: quantity = 0
+   Expected: The request is rejected with a validation error. VERIFY the status code."
+"Unauthenticated POST /invoices is rejected","/Toolshop/Checkout","High","Draft","Verify that the invoice creation endpoint rejects a request carrying no bearer token, confirming that the sign-in requirement is enforced server-side and not only by the UI.","1. Database freshly seeded.
+2. A structurally valid invoice payload is prepared, matching the Swagger schema and containing ADDR-VALID billing fields.
+3. No Authorization header is set on the request.
+4. The invoice count for U-customer before the request is recorded as N.","toolshop;checkout;permission;api","KAN-18","1. Send POST /invoices with the valid payload and no Authorization header.
+   Test data: valid invoice body
+   Expected: The request is rejected with an authentication error status. BLOCKED on Q3 - confirm 401 versus 403 before finalising.
+
+2. Inspect the response body.
+   Expected: An authentication error is returned. No invoice identifier is present in the body.
+
+3. Sign in as U-customer and call GET /invoices.
+   Test data: U-customer / welcome01
+   Expected: The invoice count is still N. The rejected request created nothing.
+
+4. Repeat the first step with a syntactically malformed bearer token.
+   Test data: malformed token
+   Expected: The request is rejected with the same authentication error status.
+
+5. Repeat with a valid U-customer2 token but a payload naming U-customer.
+   Test data: U-customer2 token
+   Expected: Either the request is rejected, or the invoice is attributed to U-customer2 - never to U-customer. If attributed to U-customer, that is a cross-account write and a Critical defect."

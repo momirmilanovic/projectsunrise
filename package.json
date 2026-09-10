@@ -1,0 +1,21 @@
+{
+  "name": "sunrise-toolshop-qa",
+  "version": "1.0.0",
+  "description": "Zephyr push + Playwright suite for the Toolshop practice app",
+  "scripts": {
+    "push:zephyr": "node scripts/push-to-zephyr.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/momirmilanovic/projectsunrise.git"
+  },
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/momirmilanovic/projectsunrise/issues"
+  },
+  "homepage": "https://github.com/momirmilanovic/projectsunrise#readme",
+  "private": true,
+  "devDependencies": {
+    "@playwright/test": "^1.62.1"
+  }
+}

@@ -1,0 +1,12 @@
+# Any local env file. Broad on purpose: .env_jira held a live Jira API token while
+# only ".env" was ignored, which is one `git add -A` away from a committed secret.
+.env
+.env.*
+.env_*
+!.env.example
+
+node_modules/
+playwright/.auth/
+playwright-report/
+test-results/
+artifacts/
