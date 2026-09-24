@@ -3,7 +3,14 @@
   "version": "1.0.0",
   "description": "Zephyr push + Playwright suite for the Toolshop practice app",
   "scripts": {
-    "push:zephyr": "node scripts/push-to-zephyr.mjs"
+    "push:zephyr": "node scripts/push-to-zephyr.mjs",
+    "test": "playwright test --config playwright/playwright.config.js",
+    "test:headed": "playwright test --config playwright/playwright.config.js --headed",
+    "test:ui": "playwright test --config playwright/playwright.config.js --ui",
+    "test:setup": "playwright test --config playwright/playwright.config.js --project=setup",
+    "test:search": "playwright test --config playwright/playwright.config.js tests/search",
+    "test:checkout": "playwright test --config playwright/playwright.config.js tests/checkout",
+    "report": "playwright show-report playwright/playwright-report"
   },
   "repository": {
     "type": "git",

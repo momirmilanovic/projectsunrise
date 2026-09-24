@@ -8,15 +8,22 @@ Working agreement for this repository. Read this before doing anything else in t
 
 Two workstreams against one target application:
 
-1. **Zephyr push** — take test cases authored as YAML/JSON in this repo and create them in
-   Zephyr Scale (Jira Cloud), linked back to their originating Jira issue.
-2. **Playwright automation** — implement those same test cases as a TypeScript Playwright
-   suite built on the Page Object Model.
+1. **Zephyr push** — take test cases authored as JSON in this repo and create them in
+   Zephyr (Jira Cloud), linked back to their originating Jira issue.
+2. **Playwright automation** — implement test cases as a JavaScript Playwright suite.
 
-The two share one source of truth: `testcases/*.json`. A test case is written once, pushed to
-Zephyr for manual/traceability purposes, and implemented in Playwright for execution. **When
-they disagree, the JSON wins** — fix the JSON, then regenerate or re-implement. Never let the
-Playwright spec silently drift from the documented case.
+**JavaScript is the main language of this repo.** The automation suite is plain ESM
+JavaScript — no TypeScript, no build step, no typecheck.
+
+The two workstreams have **different inputs**, and this matters:
+
+- The push workstream authors into `testcases/*.json` and pushes those upward into Zephyr.
+- The automation workstream takes its cases **from Zephyr, handed over as Jira/Zephyr
+  links**. It does not read `testcases/*.json`.
+
+So Zephyr is what the automation implements against. If a Zephyr case is wrong, ambiguous, or
+missing expected results, **report it and get the case fixed** — do not quietly invent the
+missing half in the spec. Never let a Playwright spec drift from the case it names.
 
 ### Target application: Toolshop (Practice Software Testing)
 
@@ -173,6 +180,29 @@ screenshots under `artifacts/` (gitignored).
 | How both gates work | By **disabling the control**. No validation copy is shown anywhere on the billing or payment step. Assert `toBeDisabled()` |
 | Guest checkout | `Continue as Guest` is offered at the sign-in step, and `POST /invoices/guest` has no security requirement — **`BR-2` is false as written** |
 | Product ids | ULIDs, e.g. `01M1EDF0JJAHF9NSSKMTFZ7FRX`. Not integers |
+| **Staging reseeds itself** | Verified 2026-09-10: every product, category and brand ULID changed within ~30 minutes (`01M25PF8…` → `01M25SX2…`), while every **name and price stayed identical**. A ULID captured earlier returns `404`. **Never persist an id — locate and assert by name or label.** The upside: the catalogue is deterministic, so expected name sets are stable |
+| Category / brand filters | Checkboxes are `[data-test="category-<ULID>"]` / `[data-test="brand-<ULID>"]` with `name="category_id"` / `name="brand_id"`. The ULID is seed-generated, so match on the accessible name from the label instead |
+| Filter results | `Hammer` → 7 products. `Hammer` + `ForgeFlex Tools` → 6, dropping `Claw Hammer` (the only MightyCraft hammer). Filters intersect |
+| Product cards | `a[data-test="product-<ULID>"]` containing `[data-test="product-name"]` and `[data-test="product-price"]`. **No category or brand is exposed on the card** |
+
+### v5.0 selector corrections (verified 2026-09-10)
+
+The app is now **v5.0 / Angular 20.0.5** and has gained Rentals, an eco filter and CO₂
+ratings. Several hooks recorded on 2026-09-01 were wrong:
+
+| Thing | Correct value |
+|---|---|
+| PDP quantity | `[data-test="quantity"]` — **not** `product-quantity`, which is the *cart line* quantity |
+| PDP | `unit-price`, `product-description`, `increase-quantity`, `decrease-quantity`, `add-to-cart`, `add-to-favorites`, `add-to-compare` |
+| Cart line | `product-title`, `product-quantity`, `product-price`, `line-price`; total is `td[data-test="cart-total"]` |
+| Stepper | `CART 1 → SIGN IN 2 → BILLING ADDRESS 3 → PAYMENT 4`. `proceed-1` on the cart step, **`proceed-2-guest`** on the guest sign-in path, `proceed-3` on billing, `finish` on payment |
+| Guest path | The sign-in step has two tabs; the guest one is `a[role="tab"]` named `Continue as Guest`. Fields `guest-email`, `guest-first-name`, `guest-last-name`, `guest-submit` |
+| Login | `login-form`, `email`, `password`, `login-submit` (an `input[type=submit]`) |
+| Country | A `<select>` whose **option values are ISO 3166-1 alpha-2 codes** — `NL` renders as `Netherlands (the)`, `RS` as `Serbia`. Select by code |
+| Buy Now Pay Later | `monthly_installments` is a `<select>`, values `3` / `6` / `9` / `12`, labelled `6 Monthly Installments` |
+| Bank transfer | `bank_name`, `account_name`, `account_number`, all text inputs |
+| Confirm gate | `finish` stays `disabled` until the per-method fields are filled. No validation copy |
+| Billing step | Has **no name field** — only country, postal code, house number, street, city, state |
 
 Three defect candidates recorded in the cases: the `404`, the misleading success toast, and
 the UI/API mandatory-field mismatch.
@@ -346,28 +376,53 @@ Use the API.
 
 ## 6. Playwright architecture
 
-TypeScript, Page Object Model, Playwright Test runner. Build it as a test automation engineer
-would for a product they have to maintain for two years — not as a demo.
+**JavaScript** (ESM), Playwright Test runner, **UI tests only**. Build it as a test
+automation engineer would for a product they have to maintain for two years — not as a demo.
+
+Four levels, and the separation is the point:
+
+| Level | Holds | Never holds |
+|---|---|---|
+| `pages/` | locators and **atomic** operations: `checkCategory(label)`, `clickNext()` | journeys, assertions |
+| `actions/` | **user intent** composed from page atoms, bound to an actor: `fillPaymentForm(details)` | raw locators |
+| `actions/assertions/` | named assertion methods **called from specs** | actions (would create a cycle) |
+| `tests/` | Zephyr-keyed specs calling actor actions, then assertions | inline locators, bare `expect` on DOM |
+
+Imports run strictly one way: `pages` → `actions` → `tests`, with `actions/assertions`
+importing `pages` and `utils` only.
 
 ### Layout
 
 ```
 playwright/
-├── playwright.config.ts
+├── playwright.config.js
+├── jsconfig.json           # editor intellisense only - there is no build step
+├── setup/auth.setup.js     # "setup" project: UI login per role -> .auth/<role>.json
 ├── src/
-│   ├── pages/              # page objects - one class per page or major component
-│   │   ├── BasePage.ts
-│   │   ├── CartPage.ts
-│   │   ├── CheckoutPage.ts
-│   │   └── components/     # Header, CartWidget, PaymentPanel
-│   ├── api/                # typed API clients (ProductsApi, CartApi, InvoicesApi, AuthApi)
-│   ├── fixtures/           # custom fixtures - auth, seeded data, api clients
-│   ├── data/               # builders/factories, NOT literal fixtures
-│   └── config/             # env, users, endpoints
+│   ├── config/             # env.js (staging URLs + .env parsing), actors.js (registry)
+│   ├── pages/              # BasePage, HomePage, ProductPage, CartPage, CheckoutPage,
+│   │   │                   # BillingStep, PaymentStep, LoginPage, components/Header
+│   │   └── index.js        # buildPages(page) -> one frozen bundle per context
+│   ├── actions/
+│   │   ├── Actor.js        # identity + pages + receipts
+│   │   ├── CustomerActions.js
+│   │   └── assertions/     # search / cart / checkout assertion methods
+│   ├── data/               # catalogue.js, billing.js, payments.js
+│   ├── utils/              # money (integer cents), network waits, invoice, text, session
+│   └── fixtures/           # actors.fixture.js, workerAuth.fixture.js, index.js
 ├── tests/
-│   ├── checkout/           # one spec file per module, mirroring Zephyr folders
-│   └── api/
+│   ├── search/             # one spec per Zephyr case, filename carries the key
+│   └── checkout/
 └── .auth/                  # storageState files, gitignored
+```
+
+An actor carries a **`receipts`** object: every action that submits data records exactly what
+it typed. Assertions then verify the page against the receipt, so a spec never restates the
+same literal twice:
+
+```js
+const payment = await regularUser.fillPaymentForm(bankTransfer());
+await assertPaymentDetails(regularUser.pages, payment);
 ```
 
 ### Page objects
@@ -376,9 +431,10 @@ playwright/
   `checkoutPage.confirmButton.click()`.
 - No assertions inside page objects. Page objects act and return state; specs assert. The one
   exception is an internal wait that guarantees a method's postcondition.
-- Locators as readonly private fields, resolved via `page.getByRole` / `getByLabel` /
-  `getByTestId`. Prefer role and label over CSS. Toolshop has `data-test` attributes in many
-  places — use them when the accessible name is ambiguous, not by default.
+- Locators as instance fields set in the constructor, resolved via `page.getByRole` /
+  `getByLabel` / `getByTestId`. Prefer role and label over CSS. Toolshop has `data-test`
+  attributes in many places — use them when the accessible name is ambiguous, not by default,
+  and **never when the attribute embeds a seed-generated ULID** (see §3).
 - No `page.waitForTimeout`. Ever. See below.
 
 ### The async recalculation trap
@@ -403,24 +459,33 @@ Web-first assertions (`expect(locator).toHaveText`) auto-retry and handle most c
 response wait when the change is triggered by a network round trip whose completion is not
 otherwise observable.
 
-### Setup through the API, not the UI
-
-Reaching the checkout payment step through UI clicks costs ~15 actions and couples every
-checkout test to the catalog and cart UIs. Build state through the API and enter the UI at the
-step under test — **except** where the UI path itself is what the case is testing.
-
-`CHK-TC-04` (cart survives sign-in) must use the real UI guest flow. `CHK-TC-05` (total
-arithmetic) should have its cart built via `POST /carts` and land straight on the cart page.
-The test case's `objective` tells you which.
-
 ### Authentication
 
-A `setup` project that logs in once per role and writes `storageState` to `.auth/`. Specs
-declare the role they need through a fixture. Never log in through the UI inside a test unless
-login is the thing under test.
+Auth goes **through the UI**. `LoginPage.signIn(email, password)` is the single
+implementation; both fixture flavours call it, so login logic exists once.
 
-`CHK-TC-03` and `CHK-TC-14` need a genuinely clean session — no `storageState`, cleared
-cookies and localStorage. That is a distinct fixture, not the default with a logout appended.
+Two flavours, both available from `src/fixtures/index.js` — a spec just names the fixture it
+wants, and fixtures are lazy so it only pays for that one:
+
+| Fixture | Flavour | Behaviour |
+|---|---|---|
+| `regularUser`, `secondUser` | storageState + `setup` project | Signs in once for the whole run, each test gets its own context. **The default.** |
+| `workerCustomer` | worker-scoped | One UI sign-in per worker, reused across that worker's tests. Simpler, weaker isolation. |
+| `guest` | clean | Fresh context, no `storageState`, cookies and storage cleared. A distinct fixture, not the default with a logout appended. |
+
+Accounts and their password variables live in `src/config/actors.js`:
+
+| Actor | Email | Password from |
+|---|---|---|
+| `regularUser` | `tester.testerson@gmail.com` | `TEST_PASSWORD` |
+| `secondUser` | `testera.testersona@gmail.com` | `TESTA_PASSWORD` |
+
+Passwords come from the environment only and are never written into a spec, a page object or
+the registry. A missing variable throws a named error at setup time rather than attempting a
+blank login.
+
+Give the two order-placing specs **different actors** so they never share a server-side cart
+when running in parallel.
 
 ### Data and isolation
 
@@ -434,12 +499,14 @@ cookies and localStorage. That is a distinct fixture, not the default with a log
 
 ### Config
 
-Three environments: `local` (default), `staging` (read-only smoke), `with-bugs`. Select via
-`TEST_ENV`. Never hardcode a base URL in a spec or page object.
+**Staging only** — `https://practicesoftwaretesting.com`. `src/config/env.js` is the single
+place a URL appears; never hardcode one in a spec or page object. There is no `TEST_ENV`
+switch, no local Docker target and no `with-bugs` target in this suite.
 
-`with-bugs` is a **mutation testing target**: the suite is expected to fail there. Use it to
-prove the tests actually detect regressions. A test that passes on both builds is not testing
-anything.
+Because staging is shared worldwide and cannot be reset, two things follow. The checkout
+specs **place real orders** — run them deliberately. And every assertion must key off an
+identifier the test itself created or a name the seeder guarantees, never a count, never "the
+newest" anything.
 
 ### Reporting
 
@@ -461,7 +528,7 @@ retry is a bug report, not a pass.
   `expect`, or a generic `fillForm(fields)` before three concrete forms exist is speculative.
 - **When a Zephyr or Jira call fails, read the response body** before changing the payload. The
   API names the offending field. Do not guess at field names by trying variations.
-- Run `npx tsc --noEmit` and the linter before declaring TypeScript work done.
+- There is no typecheck or build step. Verify JavaScript work by **running the specs**.
 - Keep commits scoped to one module or one concern.
 - If instructions here conflict with a request, say so rather than silently following one.
 
@@ -475,10 +542,10 @@ retry is a bug report, not a pass.
    live (`KAN-T1`–`T5`); re-running pushes only the new ones. Once Q1–Q4 are resolved, the
    two cases carrying `⚠ VERIFY` markers need their steps corrected and re-pushed with
    `--force`.
-4. Build the Playwright skeleton: config, fixtures, auth setup, `BasePage`, API clients.
-5. Implement Checkout end to end — the highest-risk module, and the one that proves the
-   architecture works.
-6. Only then produce the remaining ten module tickets and their cases.
+4. **Done** — the Playwright skeleton exists: config, both fixture flavours, UI auth setup,
+   pages, actions, assertions, data and utils.
+5. **Done** — `KAN-T15`, `KAN-T16` and `KAN-T17` are implemented under `playwright/tests/`.
+6. Extend to further Zephyr cases as they are handed over as links, reusing the existing
+   layers. Add a page object only when a case needs a screen that has none.
 
-Do not start step 6 before step 5 is done. The point of building Checkout first is to discover
-what the architecture gets wrong while it is cheap to change.
+The automation backlog is driven by Zephyr links, not by `testcases/*.json`.

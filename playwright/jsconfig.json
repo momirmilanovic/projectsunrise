@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "target": "ES2022",
+    "checkJs": false,
+    "allowJs": true,
+    "baseUrl": "."
+  },
+  "include": ["src/**/*.js", "tests/**/*.js", "setup/**/*.js", "playwright.config.js"]
+}
