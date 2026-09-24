@@ -1,13 +1,22 @@
 {
   "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ]
+    },
     "zephyr": {
       "command": "npx",
-      "args": ["-y", "@smartbear/mcp"],
+      "args": [
+        "-y",
+        "@smartbear/mcp"
+      ],
       "env": {
         "MCP_CLIENTS": "zephyr",
         "ZEPHYR_API_TOKEN": "${ZEPHYR_API_TOKEN}",
         "ZEPHYR_BASE_URL": "https://de.api.zephyrscale.smartbear.com/v2"
-      
       }
     }
   }
