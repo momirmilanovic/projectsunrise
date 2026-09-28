@@ -24,6 +24,13 @@ export async function verifyProductQuantity(productPage, expectedQuantity) {
   await expect(productPage.quantity).toHaveValue(String(expectedQuantity));
 }
 
+// "Compare button became blue": unselected is btn-outline-primary (outline only),
+// selected is btn-primary (solid fill) - confirmed against staging.
+export async function verifyCompareButtonSelected(productPage) {
+  await expect(productPage.addToCompareButton).toHaveClass(/\bbtn-primary\b/);
+  await expect(productPage.addToCompareButton).not.toHaveClass(/btn-outline-primary/);
+}
+
 // Navigating the nav "Categories" menu narrows the sidebar's "By category" tree to just
 // that category (and its subcategories) - "By brand" stays present alongside it.
 export async function verifyCategoryPageDisplayed(homePage, categoryName) {

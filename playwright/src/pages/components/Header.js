@@ -7,6 +7,7 @@ export class Header extends BasePage {
     this.signIn = this.dt('nav-sign-in');
     this.cart = this.dt('nav-cart');
     this.cartQuantity = this.dt('cart-quantity');
+    this.contact = this.dt('nav-contact');
     // Site brand/logo link, top-left of the nav. No data-test hook; its accessible
     // name comes from the <a title="..."> attribute, observed against staging.
     this.logo = this.page.getByRole('link', { name: 'Practice Software Testing - Toolshop' });
@@ -27,5 +28,10 @@ export class Header extends BasePage {
   async goHome() {
     await this.logo.click();
     await this.page.waitForURL((url) => url.pathname === '/');
+  }
+
+  async openContact() {
+    await this.contact.click();
+    await this.page.waitForURL((url) => url.pathname === '/contact');
   }
 }
