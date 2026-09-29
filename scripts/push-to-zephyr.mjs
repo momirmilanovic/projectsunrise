@@ -358,7 +358,11 @@ async function pushCase(tc, folderId, jiraIssueId, existingNames) {
   if (!APPLY) {
     console.log(`      POST /testcases                        ${payload.priorityName}/${payload.statusName}, ${payload.labels.length} labels`);
     console.log(`      POST /testcases/{key}/teststeps        ${steps.items.length} steps, OVERWRITE`);
-    console.log(`      POST /testcases/{key}/links/issues     issueId ${jiraIssueId}`);
+    if (jiraIssueId) {
+      console.log(`      POST /testcases/{key}/links/issues     issueId ${jiraIssueId}`);
+    } else {
+      console.log('      (no jiraIssueId in source header - would be created unlinked)');
+    }
     if (hasVerifyMarker(tc)) console.log('      note: contains VERIFY markers - stays Draft');
     return { id: tc.id, action: 'dry-run' };
   }
@@ -369,12 +373,16 @@ async function pushCase(tc, folderId, jiraIssueId, existingNames) {
   await api('POST', `/testcases/${created.key}/teststeps`, steps);
   console.log(`      ${steps.items.length} steps written`);
 
-  await api('POST', `/testcases/${created.key}/links/issues`, { issueId: jiraIssueId });
-  console.log(`      linked to issue ${jiraIssueId} (${tc.coverage})`);
+  if (jiraIssueId) {
+    await api('POST', `/testcases/${created.key}/links/issues`, { issueId: jiraIssueId });
+    console.log(`      linked to issue ${jiraIssueId} (${tc.coverage})`);
+  } else {
+    console.log(`      no jiraIssueId in source header - created unlinked (coverage noted as ${tc.coverage})`);
+  }
 
   existingNames.set(name, created.key);
   await sleep(400); // be gentle with the rate limiter
-  return { id: tc.id, action: 'created', key: created.key };
+  return { id: tc.id, action: jiraIssueId ? 'created' : 'created-unlinked', key: created.key };
 }
 
 // -------------------------------------------------------------------- main

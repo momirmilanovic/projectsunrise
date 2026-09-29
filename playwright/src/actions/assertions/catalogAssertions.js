@@ -39,6 +39,21 @@ export async function verifyCategoryPageDisplayed(homePage, categoryName) {
   await expect(homePage.page.getByRole('heading', { name: 'By brand:' })).toBeVisible();
 }
 
+// Confirmed against staging 2026-09-29: an <h2> reading exactly "Related products"
+// above a row of product cards, present on every product detail page.
+export async function verifyRelatedProductsDisplayed(productPage) {
+  await expect(productPage.relatedProductsHeading).toBeVisible();
+}
+
+// Confirmed against staging 2026-09-29: out-of-stock products show
+// data-test="out-of-stock" text "Out of stock" and render Add to cart disabled
+// rather than hiding it.
+export async function verifyOutOfStock(productPage) {
+  await expect(productPage.outOfStock).toHaveText('Out of stock');
+  await expect(productPage.addToCartButton).toBeVisible();
+  await expect(productPage.addToCartButton).toBeDisabled();
+}
+
 export async function verifyHomePageDisplayed(homePage, header) {
   await expect(homePage.page).toHaveURL(/\/$/);
   await expect(header.logo).toBeVisible();

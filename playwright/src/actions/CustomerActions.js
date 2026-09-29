@@ -148,6 +148,11 @@ export class CustomerActions extends Actor {
     await this.submitContactForm();
   }
 
+  async openRelatedProduct(productName) {
+    await this.productPage.openRelatedProduct(productName);
+    return productName;
+  }
+
   async addProductToCompare() {
     await this.productPage.addToCompareButton.click();
   }
