@@ -1,0 +1,116 @@
+- generic [ref=f3e2]:
+  - generic [ref=f3e3]:
+    - text: View the
+    - link "Documentation" [ref=f3e4] [cursor=pointer]:
+      - /url: https://testsmith-io.github.io/practice-software-testing/#/
+    - text: for this application.
+  - generic [ref=f3e5]:
+    - generic [ref=f3e7]:
+      - generic [ref=f3e8]: Practice Black Box Testing & Bug Hunting
+      - button "Testing Guide" [ref=f3e9] [cursor=pointer]
+      - button "🐛 Bug Hunting" [ref=f3e10] [cursor=pointer]
+    - navigation [ref=f3e11]:
+      - generic [ref=f3e12]:
+        - link "Practice Software Testing - Toolshop" [ref=f3e13] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f3e32]:
+          - menubar "Main menu" [ref=f3e33]:
+            - menuitem [ref=f3e34]:
+              - link "Home" [ref=f3e35] [cursor=pointer]:
+                - /url: /
+            - menuitem [ref=f3e36]:
+              - button "Categories" [ref=f3e37] [cursor=pointer]
+            - menuitem [ref=f3e38]:
+              - link "Contact" [ref=f3e39] [cursor=pointer]:
+                - /url: /contact
+            - menuitem [ref=f3e40]:
+              - link "Sign in" [ref=f3e41] [cursor=pointer]:
+                - /url: /auth/login
+          - button "Select language" [ref=f3e43] [cursor=pointer]: EN
+  - generic [ref=f3e48]:
+    - generic [ref=f3e49]:
+      - paragraph [ref=f3e50]:
+        - img "Banner" [ref=f3e51]
+      - separator [ref=f3e52]
+    - generic [ref=f3e53]:
+      - generic [ref=f3e54]:
+        - heading [level=4] [ref=f3e55]
+        - separator [ref=f3e59]
+        - combobox "sort" [ref=f3e62]:
+          - option [selected]
+          - option "Name (A - Z)"
+          - option "Name (Z - A)"
+          - option "Price (High - Low)"
+          - option "Price (Low - High)"
+          - option "CO₂ Rating (A - E)"
+          - option "CO₂ Rating (E - A)"
+        - heading [level=4] [ref=f3e63]
+        - separator [ref=f3e67]
+        - generic "ngx-slider" [ref=f3e69]:
+          - slider "ngx-slider" [ref=f3e74] [cursor=pointer]
+          - slider "ngx-slider-max" [ref=f3e75] [cursor=pointer]
+          - generic [ref=f3e76]: "0"
+          - generic [ref=f3e77]: "200"
+          - generic [ref=f3e78]: "1"
+          - generic [ref=f3e79]: "100"
+        - heading [level=4] [ref=f3e81]
+        - separator [ref=f3e85]
+        - generic [ref=f3e87]:
+          - generic [ref=f3e88]: Search
+          - textbox "Search" [ref=f3e89]
+          - button "X" [ref=f3e90] [cursor=pointer]
+          - button "Search" [ref=f3e91] [cursor=pointer]
+        - heading [level=4] [ref=f3e92]
+        - separator [ref=f3e96]
+        - heading "By category:" [level=4] [ref=f3e97]
+        - group "Categories"
+        - heading "By brand:" [level=4] [ref=f3e100]
+        - group "Brands"
+        - heading "Sustainability:" [level=4] [ref=f3e103]
+        - group "Eco-Friendly Products" [ref=f3e104]:
+          - generic [ref=f3e107]:
+            - checkbox "Show only eco-friendly products" [ref=f3e108]
+            - text: Show only eco-friendly products
+      - generic [ref=f3e110]:
+        - heading [level=5] [ref=f3e114]
+        - heading [level=5] [ref=f3e120]
+        - heading [level=5] [ref=f3e126]
+        - heading [level=5] [ref=f3e132]
+        - heading [level=5] [ref=f3e138]
+        - heading [level=5] [ref=f3e144]
+        - heading [level=5] [ref=f3e150]
+        - heading [level=5] [ref=f3e156]
+  - contentinfo [ref=f3e160]:
+    - generic [ref=f3e162]:
+      - generic [ref=f3e163]: Learn & Explore
+      - generic [ref=f3e164]:
+        - link "Learn Test Automation Hands-on courses for Playwright, Robot Framework, APIs and more" [ref=f3e166] [cursor=pointer]:
+          - /url: https://onlinecourses.testsmith.io
+          - generic [ref=f3e169]:
+            - generic [ref=f3e170]: Learn Test Automation
+            - text: Hands-on courses for Playwright, Robot Framework, APIs and more
+        - link "API Spector Open-source API testing, mocking and contract testing" [ref=f3e172] [cursor=pointer]:
+          - /url: https://api-spector.dev
+          - generic [ref=f3e175]:
+            - generic [ref=f3e176]: API Spector
+            - text: Open-source API testing, mocking and contract testing
+        - link "GitHub Source code, issues and contributions" [ref=f3e178] [cursor=pointer]:
+          - /url: https://github.com/testsmith-io/practice-software-testing
+          - generic [ref=f3e181]:
+            - generic [ref=f3e182]: GitHub
+            - text: Source code, issues and contributions
+    - generic [ref=f3e183]:
+      - generic [ref=f3e184]:
+        - text: This is a DEMO application, used for software testing training purpose. |
+        - link "Privacy Policy" [ref=f3e185] [cursor=pointer]:
+          - /url: /privacy
+        - text: "| Banner photo by"
+        - link "Barn Images" [ref=f3e186] [cursor=pointer]:
+          - /url: https://unsplash.com/@barnimages
+        - text: "on"
+        - link "Unsplash" [ref=f3e187] [cursor=pointer]:
+          - /url: https://unsplash.com/photos/t5YUoHW6zRo
+        - text: .
+      - generic [ref=f3e188]: v2.5 | Built 2026-09-09 | Angular 20.0.5
+  - button "Open chat" [ref=f3e190] [cursor=pointer]
+  - button "Show live shop activity" [ref=f3e194] [cursor=pointer]

@@ -1,0 +1,76 @@
+[     308ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.practicesoftwaretesting.com/users/me:0
+[     357ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.practicesoftwaretesting.com/users/me:0
+[     359ms] [ERROR] ERROR {message: Unauthorized} @ https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:6
+[     366ms] [LOG] Initializing Google Analytics 4: G-0BJFXRKTYC @ https://practicesoftwaretesting.com/chunk-4EZ6YPXQ.js:0
+[     384ms] [ERROR] ERROR TypeError: Cannot read properties of undefined (reading 'cart_items')
+    at template (https://practicesoftwaretesting.com/chunk-INL72T3J.js:1:29496)
+    at Vm (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:39700)
+    at GC (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:48997)
+    at rd (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:50165)
+    at Xm (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49997)
+    at WC (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49953)
+    at ev (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:50344)
+    at GC (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49352)
+    at rd (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:50165)
+    at Xm (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49997) @ https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:6
+[     388ms] [ERROR] ERROR TypeError: Cannot read properties of undefined (reading 'cart_items')
+    at template (https://practicesoftwaretesting.com/chunk-INL72T3J.js:1:29496)
+    at Vm (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:39700)
+    at GC (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:48997)
+    at rd (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:50165)
+    at Xm (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49997)
+    at WC (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49953)
+    at ev (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:50344)
+    at GC (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49352)
+    at rd (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:50165)
+    at Xm (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49997) @ https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:6
+[     397ms] [ERROR] ERROR TypeError: Cannot read properties of undefined (reading 'cart_items')
+    at template (https://practicesoftwaretesting.com/chunk-INL72T3J.js:1:29496)
+    at Vm (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:39700)
+    at GC (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:48997)
+    at rd (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:50165)
+    at Xm (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49997)
+    at WC (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49953)
+    at ev (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:50344)
+    at GC (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49352)
+    at rd (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:50165)
+    at Xm (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49997) @ https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:6
+[     489ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.practicesoftwaretesting.com/users/me:0
+[     490ms] [ERROR] ERROR TypeError: Cannot read properties of undefined (reading 'cart_items')
+    at template (https://practicesoftwaretesting.com/chunk-INL72T3J.js:1:29496)
+    at Vm (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:39700)
+    at GC (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:48997)
+    at rd (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:50165)
+    at Xm (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49997)
+    at WC (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49953)
+    at ev (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:50344)
+    at GC (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49352)
+    at rd (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:50165)
+    at Xm (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49997) @ https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:6
+[     492ms] [ERROR] ERROR TypeError: Cannot read properties of undefined (reading 'cart_items')
+    at template (https://practicesoftwaretesting.com/chunk-INL72T3J.js:1:29496)
+    at Vm (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:39700)
+    at GC (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:48997)
+    at rd (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:50165)
+    at Xm (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49997)
+    at WC (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49953)
+    at ev (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:50344)
+    at GC (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49352)
+    at rd (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:50165)
+    at Xm (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49997) @ https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:6
+[     494ms] [ERROR] ERROR TypeError: Cannot read properties of undefined (reading 'cart_items')
+    at template (https://practicesoftwaretesting.com/chunk-INL72T3J.js:1:29496)
+    at Vm (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:39700)
+    at GC (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:48997)
+    at rd (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:50165)
+    at Xm (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49997)
+    at WC (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49953)
+    at ev (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:50344)
+    at GC (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49352)
+    at rd (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:50165)
+    at Xm (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:49997) @ https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:6
+[     494ms] [ERROR] ERROR {message: Unauthorized} @ https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:6
+[     535ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.practicesoftwaretesting.com/users/me:0
+[     543ms] [ERROR] ERROR {message: Unauthorized} @ https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:6
+[     623ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://practicesoftwaretesting.com/checkout:0
+[     744ms] [LOG] Google Analytics 4 ready for tracking @ https://practicesoftwaretesting.com/chunk-4EZ6YPXQ.js:0

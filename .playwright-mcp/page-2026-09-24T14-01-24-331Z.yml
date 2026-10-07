@@ -1,0 +1,141 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - text: View the
+    - link "Documentation" [ref=e4] [cursor=pointer]:
+      - /url: https://testsmith-io.github.io/practice-software-testing/#/
+    - text: for this application.
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: Practice Black Box Testing & Bug Hunting
+      - button "Testing Guide" [ref=e9] [cursor=pointer]
+      - button "🐛 Bug Hunting" [ref=e10] [cursor=pointer]
+    - navigation [ref=e11]:
+      - generic [ref=e12]:
+        - link "Practice Software Testing - Toolshop" [ref=e13] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e32]:
+          - menubar "Main menu" [ref=e33]:
+            - menuitem [ref=e34]:
+              - link "Home" [ref=e35] [cursor=pointer]:
+                - /url: /
+            - menuitem [ref=e36]:
+              - button "Categories" [ref=e37] [cursor=pointer]
+            - menuitem [ref=e38]:
+              - link "Contact" [ref=e39] [cursor=pointer]:
+                - /url: /contact
+            - menuitem [ref=e40]:
+              - link "Sign in" [ref=e41] [cursor=pointer]:
+                - /url: /auth/login
+          - button "Select language" [ref=e43] [cursor=pointer]: EN
+  - generic [ref=e568]:
+    - generic [ref=e570]:
+      - heading "Product Comparison" [level=2] [ref=e571]
+      - generic [ref=e572]:
+        - generic [ref=e573]:
+          - checkbox "Show differences only" [ref=e574]
+          - text: Show differences only
+        - button "Clear All" [ref=e575] [cursor=pointer]
+    - table [ref=e577]:
+      - caption [ref=e578]: Product Comparison
+      - rowgroup [ref=e579]:
+        - row [ref=e580]:
+          - columnheader [ref=e581]
+          - columnheader [ref=e582]:
+            - button "Remove Combination Pliers from comparison" [ref=e583] [cursor=pointer]: ×
+            - link [ref=e584] [cursor=pointer]:
+              - /url: /product/01M39VF4R8ABJ986G713ZGV78W
+              - img "Combination Pliers" [ref=e585]
+            - link "Combination Pliers" [ref=e587] [cursor=pointer]:
+              - /url: /product/01M39VF4R8ABJ986G713ZGV78W
+          - columnheader [ref=e588]:
+            - button "Remove Pliers from comparison" [ref=e589] [cursor=pointer]: ×
+            - link [ref=e590] [cursor=pointer]:
+              - /url: /product/01M39VF4RDBPNKAA0GRH62CEKD
+              - img "Pliers" [ref=e591]
+            - link "Pliers" [ref=e593] [cursor=pointer]:
+              - /url: /product/01M39VF4RDBPNKAA0GRH62CEKD
+      - rowgroup [ref=e594]:
+        - row [ref=e595]:
+          - rowheader "Price" [ref=e596]
+          - cell "$14.15" [ref=e597]
+          - cell "$12.01" [ref=e598]
+        - row [ref=e599]:
+          - rowheader "Brand" [ref=e600]
+          - cell "ForgeFlex Tools" [ref=e601]
+          - cell "ForgeFlex Tools" [ref=e602]
+        - row [ref=e603]:
+          - rowheader "Category" [ref=e604]
+          - cell "Pliers" [ref=e605]
+          - cell "Pliers" [ref=e606]
+        - row [ref=e607]:
+          - rowheader "Availability" [ref=e608]
+          - cell "In Stock" [ref=e609]
+          - cell "In Stock" [ref=e610]
+        - row [ref=e611]:
+          - rowheader "CO₂ Rating" [ref=e612]
+          - cell "D" [ref=e613]
+          - cell "D" [ref=e615]
+        - row [ref=e617]:
+          - rowheader "Eco-Friendly" [ref=e618]
+          - cell "-" [ref=e619]
+          - cell "-" [ref=e620]
+        - row [ref=e621]:
+          - columnheader "Specifications" [ref=e622]
+        - row [ref=e623]:
+          - rowheader "Handle Material" [ref=e624]
+          - cell "Bi-component" [ref=e625]
+          - cell "Rubber" [ref=e626]
+        - row [ref=e627]:
+          - rowheader "Length" [ref=e628]
+          - cell "200 mm" [ref=e629]
+          - cell "180 mm" [ref=e630]
+        - row [ref=e631]:
+          - rowheader "Material" [ref=e632]
+          - cell "Chrome Vanadium Steel" [ref=e633]
+          - cell "Carbon Steel" [ref=e634]
+        - row [ref=e635]:
+          - rowheader "Warranty" [ref=e636]
+          - cell "2 years" [ref=e637]
+          - cell "1 years" [ref=e638]
+        - row [ref=e639]:
+          - rowheader "Weight" [ref=e640]
+          - cell "340 g" [ref=e641]
+          - cell "280 g" [ref=e642]
+        - row [ref=e643]:
+          - rowheader "Description" [ref=e644]
+          - cell "Versatile combination pliers designed for gripping, bending, and cutting wire with ease. Featuring chrome vanadium steel construction with induction-hardened cutting edges, these pliers deliver excellent grip and leverage for a wide range of tasks. The precision-machined jaws combine flat gripping surfaces with a pipe-grip section and integrated wire cutter for true multi-purpose functionality. Ergonomic bi-component handles reduce hand fatigue during extended use and provide a secure hold even with oily or gloved hands. The joint is precisely fitted to eliminate play and ensure smooth operation over thousands of cycles. Ideal for electricians, mechanics, and DIY enthusiasts tackling everyday projects around the workshop or job site." [ref=e645]
+          - cell "Reliable general-purpose pliers crafted from drop-forged carbon steel for long-lasting durability in demanding working conditions. The serrated jaws provide a firm grip on a variety of materials including wire, nails, small fasteners, and irregularly shaped objects. Comfortable rubber-coated handles absorb vibration and reduce hand fatigue during extended use, while the non-slip surface ensures confident handling. The precision pivot joint maintains alignment under load, delivering smooth, controlled jaw action with every squeeze. Heat-treated steel construction resists wear and deformation even under heavy use. A must-have foundational tool for any workshop, equally suited for professional tradespeople and home repair projects." [ref=e646]
+  - contentinfo [ref=e48]:
+    - generic [ref=e50]:
+      - generic [ref=e51]: Learn & Explore
+      - generic [ref=e52]:
+        - link "Learn Test Automation Hands-on courses for Playwright, Robot Framework, APIs and more" [ref=e54] [cursor=pointer]:
+          - /url: https://onlinecourses.testsmith.io
+          - generic [ref=e57]:
+            - generic [ref=e58]: Learn Test Automation
+            - text: Hands-on courses for Playwright, Robot Framework, APIs and more
+        - link "API Spector Open-source API testing, mocking and contract testing" [ref=e60] [cursor=pointer]:
+          - /url: https://api-spector.dev
+          - generic [ref=e63]:
+            - generic [ref=e64]: API Spector
+            - text: Open-source API testing, mocking and contract testing
+        - link "GitHub Source code, issues and contributions" [ref=e66] [cursor=pointer]:
+          - /url: https://github.com/testsmith-io/practice-software-testing
+          - generic [ref=e69]:
+            - generic [ref=e70]: GitHub
+            - text: Source code, issues and contributions
+    - generic [ref=e71]:
+      - generic [ref=e72]:
+        - text: This is a DEMO application, used for software testing training purpose. |
+        - link "Privacy Policy" [ref=e73] [cursor=pointer]:
+          - /url: /privacy
+        - text: "| Banner photo by"
+        - link "Barn Images" [ref=e74] [cursor=pointer]:
+          - /url: https://unsplash.com/@barnimages
+        - text: "on"
+        - link "Unsplash" [ref=e75] [cursor=pointer]:
+          - /url: https://unsplash.com/photos/t5YUoHW6zRo
+        - text: .
+      - generic [ref=e76]: v2.5 | Built 2026-09-09 | Angular 20.0.5
+  - button "Open chat" [ref=e78] [cursor=pointer]
+  - button "Show live shop activity" [ref=e82] [cursor=pointer]

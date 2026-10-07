@@ -1,0 +1,33 @@
+[    4493ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[    8317ms] [LOG] [BeX Tracking] TCF locator missing @ https://ug.contentexchange.me/static/tracker.js:33
+[    8317ms] [LOG] [BeX Tracking] TCF API missing 1 immediate @ https://ug.contentexchange.me/static/tracker.js:33
+[    8479ms] [LOG] [BeX Tracking] TCF locator missing @ https://ug.contentexchange.me/static/tracker.js:33
+[    8479ms] [LOG] [BeX Tracking] TCF API missing 2 delayed @ https://ug.contentexchange.me/static/tracker.js:33
+[    8765ms] [WARNING] [GPT] PubAdsService.setTargeting is deprecated, use googletag.setConfig({targeting: ...}) instead.
+https://goo.gle/gpt-message#170 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202609230101/pubads_impl.js?cb=122881245:22
+[    8783ms] [LOG] Homepage @ https://www.021.rs/:277
+[    8832ms] [LOG] [BeX Tracking] TCF locator missing @ https://ug.contentexchange.me/static/tracker.js:33
+[    8833ms] [LOG] [BeX Tracking] TCF API missing 3 delayed @ https://ug.contentexchange.me/static/tracker.js:33
+[    8980ms] [LOG] [BeX Tracking] TCF locator missing @ https://ug.contentexchange.me/static/tracker.js:33
+[    8980ms] [LOG] [BeX Tracking] TCF API missing 4 delayed @ https://ug.contentexchange.me/static/tracker.js:33
+[    9080ms] [LOG] [BeX Tracking] TCF locator missing @ https://ug.contentexchange.me/static/tracker.js:33
+[    9080ms] [LOG] [BeX Tracking] TCF API missing 5 delayed @ https://ug.contentexchange.me/static/tracker.js:33
+[    9375ms] [LOG] [BeX Tracking] TCF API present delayed @ https://ug.contentexchange.me/static/tracker.js:33
+[    9376ms] [LOG] [BeX Tracking] TCF event OK undefined @ https://ug.contentexchange.me/static/tracker.js:33
+[    9376ms] [LOG] [BeX Tracking] Have tcdata {tcfPolicyVersion: 5, cmpId: 300, cmpVersion: 2, gdprApplies: false, cmpStatus: loaded} @ https://ug.contentexchange.me/static/tracker.js:33
+[    9378ms] [LOG] [BeX Tracking] matching disallowed @ https://ug.contentexchange.me/static/tracker.js:33
+[    9625ms] [LOG] result bexxd6g4tc0tsr {status: ok} @ https://ug.contentexchange.me/static/tracker.js:208
+[    9625ms] [LOG] init result {status: ok} @ https://ug.contentexchange.me/static/tracker.js:248
+[    9628ms] [LOG] result bex5crmql4vdqn null @ https://ug.contentexchange.me/static/tracker.js:208
+[    9628ms] [LOG] [BeX Tracking] tracker ready CE @ https://ug.contentexchange.me/static/tracker.js:33
+[    9629ms] [LOG] [BeX Tracking] ALTERNATIVES {} @ https://ug.contentexchange.me/static/tracker.js:33
+[    9629ms] [LOG] [BeX Tracking] fetching CE https://tracker-ug.contentexchange.me/widget/ezCnTj7TbLas62HDb.bexdata?cx_id=6ab531e2c02dbe7ffe603e32&pv=ae5a36a1-1451-4b54-bb99-3ab3e9e4a72c&ref=https://www.021.rs/&gdpr=2&token=v4.public.eyJ0cmFja2VyIjoidXJuOkNvbnRlbnRFeGNoYW5nZSIsImlhdCI6IjIwMjYtMDktMjRUMTQ6MjE6MjIuODU2WiIsImV4cCI6IjIwMjYtMDktMjRUMTQ6MjY6MjIuODU2WiIsImF1ZCI6InVybjpDb250ZW50RXhjaGFuZ2UiLCJpc3MiOiJodHRwczovL2NvbnRlbnRleGNoYW5nZS5tZSJ9PIn5OCxarVha19unDRGlAWQlmr-4KpO_MHPgJ4NT5dMKq9NI0h6cwgv7F8_Z9qbWFDGZ2STX5g_L1eNPcgB0DA @ https://ug.contentexchange.me/static/tracker.js:33
+[    9630ms] [LOG] [BeX Tracking] ALTERNATIVES {} @ https://ug.contentexchange.me/static/tracker.js:33
+[    9630ms] [LOG] [BeX Tracking] fetching CE https://tracker-ug.contentexchange.me/widget/4tam62jTfJH5Skjbj.bexdata?cx_id=6ab531e2c02dbe7ffe603e32&pv=ae5a36a1-1451-4b54-bb99-3ab3e9e4a72c&ref=https://www.021.rs/&gdpr=2&token=v4.public.eyJ0cmFja2VyIjoidXJuOkNvbnRlbnRFeGNoYW5nZSIsImlhdCI6IjIwMjYtMDktMjRUMTQ6MjE6MjIuODU2WiIsImV4cCI6IjIwMjYtMDktMjRUMTQ6MjY6MjIuODU2WiIsImF1ZCI6InVybjpDb250ZW50RXhjaGFuZ2UiLCJpc3MiOiJodHRwczovL2NvbnRlbnRleGNoYW5nZS5tZSJ9PIn5OCxarVha19unDRGlAWQlmr-4KpO_MHPgJ4NT5dMKq9NI0h6cwgv7F8_Z9qbWFDGZ2STX5g_L1eNPcgB0DA @ https://ug.contentexchange.me/static/tracker.js:33
+[    9711ms] [LOG] [BeX Tracking] loading bex [Array(3)] @ https://ug.contentexchange.me/static/tracker.js:33
+[    9712ms] [LOG] [BeX Tracking] fetch BEX 660298f0014cbb048065381d @ https://ug.contentexchange.me/static/tracker.js:33
+[    9712ms] [LOG] [BeX Tracking] fetching BEX https://analytics.contentexchange.me/bex/widget/660298f0014cbb048065381d/data?cx_id=6ab531e2c02dbe7ffe603e32&pv=ae5a36a1-1451-4b54-bb99-3ab3e9e4a72c&ref=https%3A%2F%2Fwww.021.rs%2F&gdpr=2&token=v4.public.eyJ0cmFja2VyIjoidXJuOkNvbnRlbnRFeGNoYW5nZSIsImlhdCI6IjIwMjYtMDktMjRUMTQ6MjE6MjIuODU2WiIsImV4cCI6IjIwMjYtMDktMjRUMTQ6MjY6MjIuODU2WiIsImF1ZCI6InVybjpDb250ZW50RXhjaGFuZ2UiLCJpc3MiOiJodHRwczovL2NvbnRlbnRleGNoYW5nZS5tZSJ9PIn5OCxarVha19unDRGlAWQlmr-4KpO_MHPgJ4NT5dMKq9NI0h6cwgv7F8_Z9qbWFDGZ2STX5g_L1eNPcgB0DA @ https://ug.contentexchange.me/static/tracker.js:33
+[    9769ms] [LOG] [BeX Tracking] widget data {tid: data, customer: 66028c3c97b6b09fa6061a7b, campaign: 66028c5a97b6b09fa6061a7c, block_events: , route: 660298f0014cbb048065381d} @ https://ug.contentexchange.me/static/tracker.js:33
+[   10452ms] [INFO] Powered by AMP ⚡ HTML – Version 2607210106000 https://www.021.rs/ @ https://cdn.ampproject.org/rtv/012607210106000/amp4ads-v0.mjs:1
+[   10482ms] [INFO] Powered by AMP ⚡ HTML – Version 2607210106000 https://www.021.rs/ @ https://cdn.ampproject.org/rtv/012607210106000/amp4ads-v0.mjs:1
+[   10500ms] [INFO] Powered by AMP ⚡ HTML – Version 2607210106000 https://www.021.rs/ @ https://cdn.ampproject.org/rtv/012607210106000/amp4ads-v0.mjs:1

@@ -1,0 +1,168 @@
+- generic [ref=f2e2]:
+  - generic [ref=f2e3]:
+    - text: View the
+    - link "Documentation" [ref=f2e4] [cursor=pointer]:
+      - /url: https://testsmith-io.github.io/practice-software-testing/#/
+    - text: for this application.
+  - generic [ref=f2e5]:
+    - generic [ref=f2e7]:
+      - generic [ref=f2e8]: Practice Black Box Testing & Bug Hunting
+      - button "Testing Guide" [ref=f2e9] [cursor=pointer]
+      - button "🐛 Bug Hunting" [ref=f2e10] [cursor=pointer]
+    - navigation [ref=f2e11]:
+      - generic [ref=f2e12]:
+        - link "Practice Software Testing - Toolshop" [ref=f2e13] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f2e32]:
+          - menubar "Main menu" [ref=f2e33]:
+            - menuitem [ref=f2e34]:
+              - link "Home" [ref=f2e35] [cursor=pointer]:
+                - /url: /
+            - menuitem [ref=f2e530]:
+              - button "Categories" [expanded] [active] [ref=f2e37] [cursor=pointer]
+              - list "nav-categories" [ref=f2e531]:
+                - listitem [ref=f2e532]:
+                  - link "Hand Tools" [ref=f2e533] [cursor=pointer]:
+                    - /url: /category/hand-tools
+                - listitem [ref=f2e534]:
+                  - link "Power Tools" [ref=f2e535] [cursor=pointer]:
+                    - /url: /category/power-tools
+                - listitem [ref=f2e536]:
+                  - link "Other" [ref=f2e537] [cursor=pointer]:
+                    - /url: /category/other
+                - listitem [ref=f2e538]:
+                  - link "Special Tools" [ref=f2e539] [cursor=pointer]:
+                    - /url: /category/special-tools
+                - listitem [ref=f2e540]:
+                  - separator [ref=f2e541]
+                - listitem [ref=f2e542]:
+                  - link "Rentals" [ref=f2e543] [cursor=pointer]:
+                    - /url: /rentals
+            - menuitem [ref=f2e38]:
+              - link "Contact" [ref=f2e39] [cursor=pointer]:
+                - /url: /contact
+            - menuitem [ref=f2e40]:
+              - link "Sign in" [ref=f2e41] [cursor=pointer]:
+                - /url: /auth/login
+          - button "Select language" [ref=f2e43] [cursor=pointer]: EN
+  - generic [ref=f2e445]:
+    - generic [ref=f2e446]:
+      - figure [ref=f2e448]:
+        - img "Long Nose Pliers" [ref=f2e450]
+        - generic [ref=f2e451]:
+          - text: Photo by
+          - link "Brett Jordan" [ref=f2e452] [cursor=pointer]:
+            - /url: https://unsplash.com/@brett_jordan
+          - text: "on"
+          - link "Unsplash" [ref=f2e453] [cursor=pointer]:
+            - /url: https://unsplash.com/photos/GamuDTVm02g
+          - text: .
+      - generic [ref=f2e454]:
+        - heading "Long Nose Pliers" [level=1] [ref=f2e455]
+        - paragraph [ref=f2e456]:
+          - generic "category" [ref=f2e457]: Pliers
+          - generic "brand" [ref=f2e458]: MightyCraft Hardware
+        - generic [ref=f2e459]: $14.24
+        - generic "A = most environmentally friendly, E = higher environmental impact" [ref=f2e461]:
+          - text: "CO₂:"
+          - generic [ref=f2e462]: A
+          - generic [ref=f2e463]: B
+          - generic [ref=f2e464]: C
+          - generic [ref=f2e465]: D
+          - generic [ref=f2e466]: E
+        - paragraph [ref=f2e467]: Precision long nose pliers with narrow tapered jaws designed for reaching into tight, confined spaces and bending fine wire with accuracy. Made from chrome vanadium steel with induction-hardened cutting edges that cleanly sever copper, brass, and steel wire without crushing or fraying. The slim jaw profile tapers to a fine point, making these pliers indispensable for electrical terminal work, jewelry making, and intricate mechanical repairs. Bi-component comfort grips minimize hand strain during detailed tasks requiring a steady hand and controlled pressure. The leaf-spring joint returns the handles to the open position automatically, speeding up repetitive tasks. A must-have precision tool trusted by electricians, electronics technicians, and hobbyists worldwide.
+        - generic [ref=f2e468]:
+          - button "Decrease quantity" [disabled]
+          - generic [ref=f2e469]: Quantity
+          - spinbutton "Quantity" [disabled] [ref=f2e470]: "1"
+          - button "Increase quantity" [disabled]
+        - paragraph [ref=f2e471]: Out of stock
+        - generic [ref=f2e472]:
+          - button "Add to cart" [disabled]
+          - button [ref=f2e473] [cursor=pointer]
+          - button [ref=f2e477] [cursor=pointer]
+    - generic [ref=f2e482]:
+      - heading "Specifications" [level=3] [ref=f2e483]
+      - table [ref=f2e484]:
+        - rowgroup [ref=f2e485]:
+          - row [ref=f2e486]:
+            - cell "Handle Material" [ref=f2e487]
+            - cell "Bi-component" [ref=f2e488]
+          - row [ref=f2e489]:
+            - cell "Length" [ref=f2e490]
+            - cell "170mm" [ref=f2e491]
+          - row [ref=f2e492]:
+            - cell "Material" [ref=f2e493]
+            - cell "Chrome Vanadium Steel" [ref=f2e494]
+          - row [ref=f2e495]:
+            - cell "Warranty" [ref=f2e496]
+            - cell "2years" [ref=f2e497]
+          - row [ref=f2e498]:
+            - cell "Weight" [ref=f2e499]
+            - cell "220g" [ref=f2e500]
+    - separator [ref=f2e501]
+    - generic [ref=f2e502]:
+      - heading "Related products" [level=2] [ref=f2e503]
+      - generic [ref=f2e505]:
+        - link [ref=f2e506] [cursor=pointer]:
+          - /url: /product/01M3PQETQ7P37TA01YTCQT4Z03
+          - img "Combination Pliers" [ref=f2e508]
+          - generic [ref=f2e509]:
+            - heading "Combination Pliers" [level=5] [ref=f2e510]
+            - link "More information" [ref=f2e511]:
+              - /url: "#"
+        - link [ref=f2e512] [cursor=pointer]:
+          - /url: /product/01M3PQETQCSQ3K8W1ET20ZBZ81
+          - img "Pliers" [ref=f2e514]
+          - generic [ref=f2e515]:
+            - heading "Pliers" [level=5] [ref=f2e516]
+            - link "More information" [ref=f2e517]:
+              - /url: "#"
+        - link [ref=f2e518] [cursor=pointer]:
+          - /url: /product/01M3PQETRQWV3W85KZS76Q8FCW
+          - img "Bolt Cutters" [ref=f2e520]
+          - generic [ref=f2e521]:
+            - heading "Bolt Cutters" [level=5] [ref=f2e522]
+            - link "More information" [ref=f2e523]:
+              - /url: "#"
+        - link [ref=f2e524] [cursor=pointer]:
+          - /url: /product/01M3PQETS0WX6X9WW7C7MWA0QB
+          - img "Slip Joint Pliers" [ref=f2e526]
+          - generic [ref=f2e527]:
+            - heading "Slip Joint Pliers" [level=5] [ref=f2e528]
+            - link "More information" [ref=f2e529]:
+              - /url: "#"
+  - contentinfo [ref=f2e160]:
+    - generic [ref=f2e162]:
+      - generic [ref=f2e163]: Learn & Explore
+      - generic [ref=f2e164]:
+        - link "Learn Test Automation Hands-on courses for Playwright, Robot Framework, APIs and more" [ref=f2e166] [cursor=pointer]:
+          - /url: https://onlinecourses.testsmith.io
+          - generic [ref=f2e169]:
+            - generic [ref=f2e170]: Learn Test Automation
+            - text: Hands-on courses for Playwright, Robot Framework, APIs and more
+        - link "API Spector Open-source API testing, mocking and contract testing" [ref=f2e172] [cursor=pointer]:
+          - /url: https://api-spector.dev
+          - generic [ref=f2e175]:
+            - generic [ref=f2e176]: API Spector
+            - text: Open-source API testing, mocking and contract testing
+        - link "GitHub Source code, issues and contributions" [ref=f2e178] [cursor=pointer]:
+          - /url: https://github.com/testsmith-io/practice-software-testing
+          - generic [ref=f2e181]:
+            - generic [ref=f2e182]: GitHub
+            - text: Source code, issues and contributions
+    - generic [ref=f2e183]:
+      - generic [ref=f2e184]:
+        - text: This is a DEMO application, used for software testing training purpose. |
+        - link "Privacy Policy" [ref=f2e185] [cursor=pointer]:
+          - /url: /privacy
+        - text: "| Banner photo by"
+        - link "Barn Images" [ref=f2e186] [cursor=pointer]:
+          - /url: https://unsplash.com/@barnimages
+        - text: "on"
+        - link "Unsplash" [ref=f2e187] [cursor=pointer]:
+          - /url: https://unsplash.com/photos/t5YUoHW6zRo
+        - text: .
+      - generic [ref=f2e188]: v2.5 | Built 2026-09-09 | Angular 20.0.5
+  - button "Open chat" [ref=f2e190] [cursor=pointer]
+  - button "Show live shop activity" [ref=f2e194] [cursor=pointer]

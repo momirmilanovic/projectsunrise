@@ -1,0 +1,87 @@
+{
+  "module": "Catalog - Product List",
+  "moduleCode": "CAT",
+  "jiraIssue": null,
+  "jiraIssueId": null,
+  "zephyrFolder": "/Toolshop/Catalog/Product List",
+  "testCases": [
+    {
+      "id": "CAT-TC-01",
+      "name": "Compare two products selected from the home page product cards",
+      "objective": "Verify that selecting the Compare control on two separate product cards from the home page, then confirming from the comparison bar, opens the product comparison page listing both selected products.",
+      "precondition": "1. User is on the home page.",
+      "priority": "Normal",
+      "status": "Draft",
+      "type": "positive",
+      "severity": "Major",
+      "labels": [
+        "toolshop",
+        "catalog",
+        "comparison"
+      ],
+      "coverage": null,
+      "covers_rules": [],
+      "steps": [
+        {
+          "step": "On the home page, click the Compare control on the 'Pliers' product card.",
+          "data": "Pliers",
+          "expected": "⚠ VERIFY - the control should reflect a selected state (its `aria-pressed` attribute changes from \"false\"). Only the product-page Add to Compare button's selected state (a class toggle to `btn-primary`) has been confirmed against the running app; the home-page card control's selected-state indicator has not."
+        },
+        {
+          "step": "On the home page, click the Compare control on the 'Hammer' product card.",
+          "data": "Hammer",
+          "expected": "A floating comparison bar appears on the page, offering a 'Compare Now' control. Both 'Pliers' and 'Hammer' are held as selected for comparison."
+        },
+        {
+          "step": "Click 'Compare Now' on the comparison bar.",
+          "data": "",
+          "expected": "The product comparison page is displayed, showing a comparison table that contains exactly 'Pliers' and 'Hammer' as the two compared products."
+        }
+      ]
+    },
+    {
+      "id": "CAT-TC-02",
+      "name": "Clear a product comparison and return to the home page via Browse Products",
+      "objective": "Verify that after comparing two selected products, using Clear All removes the comparison and shows the empty-state message, and that Browse Products returns the user to the home page.",
+      "precondition": "1. User is on the home page.",
+      "priority": "Normal",
+      "status": "Draft",
+      "type": "positive",
+      "severity": "Major",
+      "labels": [
+        "toolshop",
+        "catalog",
+        "comparison"
+      ],
+      "coverage": null,
+      "covers_rules": [],
+      "steps": [
+        {
+          "step": "On the home page, click the Compare control on the 'Pliers' product card.",
+          "data": "Pliers",
+          "expected": "⚠ VERIFY - the control should reflect a selected state (its `aria-pressed` attribute changes from \"false\"). Only the product-page Add to Compare button's selected state (a class toggle to `btn-primary`) has been confirmed against the running app; the home-page card control's selected-state indicator has not."
+        },
+        {
+          "step": "On the home page, click the Compare control on the 'Bolt Cutters' product card.",
+          "data": "Bolt Cutters",
+          "expected": "A floating comparison bar appears on the page, offering a 'Compare Now' control. Both 'Pliers' and 'Bolt Cutters' are held as selected for comparison."
+        },
+        {
+          "step": "Click 'Compare Now' on the comparison bar.",
+          "data": "",
+          "expected": "The product comparison page is displayed, showing a comparison table whose columns are named 'Pliers' and 'Bolt Cutters', with one row per visible product characteristic."
+        },
+        {
+          "step": "On the product comparison page, click 'Clear All'.",
+          "data": "",
+          "expected": "The comparison table is removed and the message \"No products selected for comparison. Add products from the overview page.\" is displayed."
+        },
+        {
+          "step": "Click 'Browse Products'.",
+          "data": "",
+          "expected": "The home page is displayed."
+        }
+      ]
+    }
+  ]
+}

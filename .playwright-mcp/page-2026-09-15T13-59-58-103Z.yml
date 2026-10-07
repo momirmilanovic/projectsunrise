@@ -1,0 +1,138 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - text: View the
+    - link "Documentation" [ref=e4] [cursor=pointer]:
+      - /url: https://testsmith-io.github.io/practice-software-testing/#/
+    - text: for this application.
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: Practice Black Box Testing & Bug Hunting
+      - button "Testing Guide" [ref=e9] [cursor=pointer]
+      - button "🐛 Bug Hunting" [ref=e10] [cursor=pointer]
+    - navigation [ref=e11]:
+      - generic [ref=e12]:
+        - link "Practice Software Testing - Toolshop" [ref=e13] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e32]:
+          - menubar "Main menu" [ref=e33]:
+            - menuitem [ref=e34]:
+              - link "Home" [ref=e35] [cursor=pointer]:
+                - /url: /
+            - menuitem [ref=e446]:
+              - button "Categories" [ref=e37] [cursor=pointer]
+            - menuitem [ref=e38]:
+              - link "Contact" [ref=e39] [cursor=pointer]:
+                - /url: /contact
+            - menuitem [ref=e40]:
+              - link "Sign in" [ref=e41] [cursor=pointer]:
+                - /url: /auth/login
+          - button "Select language" [ref=e43] [cursor=pointer]: EN
+  - generic [ref=e662]:
+    - generic [ref=e663]:
+      - figure [ref=e665]:
+        - img "Belt Sander" [ref=e667]
+        - generic [ref=e668]:
+          - text: Photo by
+          - link "Luther.M.E. Bottrill" [ref=e669] [cursor=pointer]:
+            - /url: https://unsplash.com/@luthermeb
+          - text: "on"
+          - link "Unsplash" [ref=e670] [cursor=pointer]:
+            - /url: https://unsplash.com/photos/7kHN1-9dD_4
+          - text: .
+      - generic [ref=e671]:
+        - heading "Belt Sander" [level=1] [ref=e672]
+        - paragraph [ref=e673]:
+          - generic "category" [ref=e674]: Sander
+          - generic "brand" [ref=e675]: MightyCraft Hardware
+        - generic [ref=e676]: $73.59
+        - generic "A = most environmentally friendly, E = higher environmental impact" [ref=e678]:
+          - text: "CO₂:"
+          - generic [ref=e679]: A
+          - generic [ref=e680]: B
+          - generic [ref=e681]: C
+          - generic [ref=e682]: D
+          - generic [ref=e683]: E
+        - paragraph [ref=e684]: Powerful 800W belt sander engineered for aggressive material removal on large flat surfaces including tabletops, doors, hardwood flooring, and timber decking. The 76x533mm sanding belt travels at an impressive 380 meters per minute, enabling rapid stock removal, paint stripping, and surface leveling in a fraction of the time required by orbital sanders. A precision front roller nose allows flush sanding against walls, inside corners, and perpendicular surfaces for complete coverage without leaving unsanded edges. The quick-release belt change mechanism allows swapping abrasive grits in seconds without tools, keeping workflow interruptions to a minimum. A secondary handle on the front provides two-handed control and even pressure distribution across the full width of the belt. The dust extraction bag and auxiliary vacuum port work together to capture the large volume of fine particles generated during aggressive sanding operations.
+        - generic [ref=e685]:
+          - button "Decrease quantity" [ref=e686] [cursor=pointer]
+          - generic [ref=e690]: Quantity
+          - spinbutton "Quantity" [ref=e691]: "3"
+          - button "Increase quantity" [active] [ref=e692] [cursor=pointer]
+        - generic [ref=e696]:
+          - button [ref=e697] [cursor=pointer]
+          - button [ref=e701] [cursor=pointer]
+          - button [ref=e705] [cursor=pointer]
+    - generic [ref=e710]:
+      - heading "Specifications" [level=3] [ref=e711]
+      - table [ref=e712]:
+        - rowgroup [ref=e713]:
+          - row [ref=e714]:
+            - cell "Belt Size" [ref=e715]
+            - cell "76x533mm" [ref=e716]
+          - row [ref=e717]:
+            - cell "Belt Speed" [ref=e718]
+            - cell "380m/min" [ref=e719]
+          - row [ref=e720]:
+            - cell "Power" [ref=e721]
+            - cell "800W" [ref=e722]
+          - row [ref=e723]:
+            - cell "Voltage" [ref=e724]
+            - cell "220V" [ref=e725]
+          - row [ref=e726]:
+            - cell "Warranty" [ref=e727]
+            - cell "2years" [ref=e728]
+          - row [ref=e729]:
+            - cell "Weight" [ref=e730]
+            - cell "3200g" [ref=e731]
+    - separator [ref=e732]
+    - generic [ref=e733]:
+      - heading "Related products" [level=2] [ref=e734]
+      - generic [ref=e736]:
+        - link [ref=e737] [cursor=pointer]:
+          - /url: /product/01M2JJEVEQ455ZA6S895Z4F01P
+          - img "Sheet Sander" [ref=e739]
+          - generic [ref=e740]:
+            - heading "Sheet Sander" [level=5] [ref=e741]
+            - link "More information" [ref=e742]:
+              - /url: "#"
+        - link [ref=e743] [cursor=pointer]:
+          - /url: /product/01M2JJEVF2Q8HCNFK8R4XEJKRH
+          - img "Random Orbit Sander" [ref=e745]
+          - generic [ref=e746]:
+            - heading "Random Orbit Sander" [level=5] [ref=e747]
+            - link "More information" [ref=e748]:
+              - /url: "#"
+  - contentinfo [ref=e48]:
+    - generic [ref=e50]:
+      - generic [ref=e51]: Learn & Explore
+      - generic [ref=e52]:
+        - link "Learn Test Automation Hands-on courses for Playwright, Robot Framework, APIs and more" [ref=e54] [cursor=pointer]:
+          - /url: https://onlinecourses.testsmith.io
+          - generic [ref=e57]:
+            - generic [ref=e58]: Learn Test Automation
+            - text: Hands-on courses for Playwright, Robot Framework, APIs and more
+        - link "API Spector Open-source API testing, mocking and contract testing" [ref=e60] [cursor=pointer]:
+          - /url: https://api-spector.dev
+          - generic [ref=e63]:
+            - generic [ref=e64]: API Spector
+            - text: Open-source API testing, mocking and contract testing
+        - link "GitHub Source code, issues and contributions" [ref=e66] [cursor=pointer]:
+          - /url: https://github.com/testsmith-io/practice-software-testing
+          - generic [ref=e69]:
+            - generic [ref=e70]: GitHub
+            - text: Source code, issues and contributions
+    - generic [ref=e71]:
+      - generic [ref=e72]:
+        - text: This is a DEMO application, used for software testing training purpose. |
+        - link "Privacy Policy" [ref=e73] [cursor=pointer]:
+          - /url: /privacy
+        - text: "| Banner photo by"
+        - link "Barn Images" [ref=e74] [cursor=pointer]:
+          - /url: https://unsplash.com/@barnimages
+        - text: "on"
+        - link "Unsplash" [ref=e75] [cursor=pointer]:
+          - /url: https://unsplash.com/photos/t5YUoHW6zRo
+        - text: .
+      - generic [ref=e76]: v2.5 | Built 2026-09-09 | Angular 20.0.5
+  - button "Open chat" [ref=e78] [cursor=pointer]
+  - button "Show live shop activity" [ref=e82] [cursor=pointer]

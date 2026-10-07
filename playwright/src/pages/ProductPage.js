@@ -17,6 +17,19 @@ export class ProductPage extends BasePage {
     // elements carrying these accessible names, observed against staging.
     this.categoryTag = page.locator('[aria-label="category"]');
     this.brandTag = page.locator('[aria-label="brand"]');
+    this.outOfStock = this.dt('out-of-stock');
+    this.relatedProductsHeading = page.getByRole('heading', { level: 2, name: 'Related products' });
+  }
+
+  // Related-product cards carry no data-test hook; each is an <a> whose only
+  // unique identifier is the <h5> product name nested inside it.
+  relatedProductLink(name) {
+    return this.page.getByRole('heading', { level: 5, name, exact: true }).locator('xpath=ancestor::a[1]');
+  }
+
+  async openRelatedProduct(name) {
+    await this.relatedProductLink(name).click();
+    await this.page.waitForURL(/\/product\//);
   }
 
   async setQuantity(value) {

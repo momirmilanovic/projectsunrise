@@ -1,0 +1,257 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - text: View the
+    - link "Documentation" [ref=e4] [cursor=pointer]:
+      - /url: https://testsmith-io.github.io/practice-software-testing/#/
+    - text: for this application.
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: Practice Black Box Testing & Bug Hunting
+      - button "Testing Guide" [ref=e9] [cursor=pointer]
+      - button "🐛 Bug Hunting" [ref=e10] [cursor=pointer]
+    - navigation [ref=e11]:
+      - generic [ref=e12]:
+        - link "Practice Software Testing - Toolshop" [ref=e13] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e32]:
+          - menubar "Main menu" [ref=e33]:
+            - menuitem [ref=e34]:
+              - link "Home" [ref=e35] [cursor=pointer]:
+                - /url: /
+            - menuitem [ref=e446]:
+              - button "Categories" [active] [ref=e37] [cursor=pointer]
+            - menuitem [ref=e38]:
+              - link "Contact" [ref=e39] [cursor=pointer]:
+                - /url: /contact
+            - menuitem [ref=e40]:
+              - link "Sign in" [ref=e41] [cursor=pointer]:
+                - /url: /auth/login
+          - button "Select language" [ref=e43] [cursor=pointer]: EN
+  - generic [ref=e447]:
+    - 'heading "Category: Power Tools" [level=2] [ref=e449]'
+    - generic [ref=e450]:
+      - generic [ref=e451]:
+        - heading [level=4] [ref=e452]
+        - separator [ref=e456]
+        - combobox [ref=e459]:
+          - option [selected]
+          - option "Name (A - Z)"
+          - option "Name (Z - A)"
+          - option "Price (High - Low)"
+          - option "Price (Low - High)"
+          - option "CO₂ Rating (A - E)"
+          - option "CO₂ Rating (E - A)"
+        - heading [level=4] [ref=e460]
+        - separator [ref=e464]
+        - heading "By category:" [level=4] [ref=e465]
+        - generic [ref=e466]:
+          - generic [ref=e467]:
+            - checkbox "Power Tools" [ref=e468]
+            - text: Power Tools
+          - list [ref=e469]:
+            - generic [ref=e471]:
+              - checkbox "Grinder" [ref=e472]
+              - text: Grinder
+            - generic [ref=e474]:
+              - checkbox "Sander" [ref=e475]
+              - text: Sander
+            - generic [ref=e477]:
+              - checkbox "Saw" [ref=e478]
+              - text: Saw
+            - generic [ref=e480]:
+              - checkbox "Drill" [ref=e481]
+              - text: Drill
+        - heading "By brand:" [level=4] [ref=e483]
+        - generic [ref=e485]:
+          - checkbox "ForgeFlex Tools" [ref=e486]
+          - text: ForgeFlex Tools
+        - generic [ref=e488]:
+          - checkbox "MightyCraft Hardware" [ref=e489]
+          - text: MightyCraft Hardware
+        - generic [ref=e491]:
+          - checkbox "some name" [ref=e492]
+          - text: some name
+        - generic [ref=e494]:
+          - checkbox "some name" [ref=e495]
+          - text: some name
+        - generic [ref=e497]:
+          - checkbox "some name" [ref=e498]
+          - text: some name
+        - generic [ref=e500]:
+          - checkbox "some name" [ref=e501]
+          - text: some name
+        - generic [ref=e503]:
+          - checkbox "some name" [ref=e504]
+          - text: some name
+        - generic [ref=e506]:
+          - checkbox "some name" [ref=e507]
+          - text: some name
+        - generic [ref=e509]:
+          - checkbox "some name" [ref=e510]
+          - text: some name
+        - generic [ref=e512]:
+          - checkbox "some name" [ref=e513]
+          - text: some name
+        - generic [ref=e515]:
+          - checkbox "some name" [ref=e516]
+          - text: some name
+        - heading "Sustainability:" [level=4] [ref=e518]
+        - group "Eco-Friendly Products" [ref=e519]:
+          - generic [ref=e522]:
+            - checkbox "Show only eco-friendly products" [ref=e523]
+            - text: Show only eco-friendly products
+      - generic [ref=e525]:
+        - 'link "Sheet Sander Compare Sheet Sander CO₂: A B C D E $58.48" [ref=e526] [cursor=pointer]':
+          - /url: /product/01M2JJEVEQ455ZA6S895Z4F01P
+          - generic [ref=e527]:
+            - img "Sheet Sander" [ref=e528]
+            - button "Compare" [ref=e529]
+          - generic [ref=e533]:
+            - heading "Sheet Sander" [level=5] [ref=e534]
+            - generic "A = most environmentally friendly, E = higher environmental impact" [ref=e535]:
+              - text: "CO₂:"
+              - generic [ref=e536]: A
+              - generic [ref=e537]: B
+              - generic [ref=e538]: C
+              - generic [ref=e539]: D
+              - generic [ref=e540]: E
+          - generic [ref=e541]: $58.48
+        - 'link "Belt Sander Compare Belt Sander CO₂: A B C D E $73.59" [ref=e543] [cursor=pointer]':
+          - /url: /product/01M2JJEVEVDQ9T31HSN193ZQQ5
+          - generic [ref=e544]:
+            - img "Belt Sander" [ref=e545]
+            - button "Compare" [ref=e546]
+          - generic [ref=e550]:
+            - heading "Belt Sander" [level=5] [ref=e551]
+            - generic "A = most environmentally friendly, E = higher environmental impact" [ref=e552]:
+              - text: "CO₂:"
+              - generic [ref=e553]: A
+              - generic [ref=e554]: B
+              - generic [ref=e555]: C
+              - generic [ref=e556]: D
+              - generic [ref=e557]: E
+          - generic [ref=e558]: $73.59
+        - 'link "Circular Saw Compare Circular Saw CO₂: A B C D E $80.19" [ref=e560] [cursor=pointer]':
+          - /url: /product/01M2JJEVEY7CE974P870S51640
+          - generic [ref=e561]:
+            - img "Circular Saw" [ref=e562]
+            - button "Compare" [ref=e563]
+          - generic [ref=e567]:
+            - heading "Circular Saw" [level=5] [ref=e568]
+            - generic "A = most environmentally friendly, E = higher environmental impact" [ref=e569]:
+              - text: "CO₂:"
+              - generic [ref=e570]: A
+              - generic [ref=e571]: B
+              - generic [ref=e572]: C
+              - generic [ref=e573]: D
+              - generic [ref=e574]: E
+          - generic [ref=e575]: $80.19
+        - 'link "Random Orbit Sander Compare Random Orbit Sander CO₂: A B C D E $100.79" [ref=e577] [cursor=pointer]':
+          - /url: /product/01M2JJEVF2Q8HCNFK8R4XEJKRH
+          - generic [ref=e578]:
+            - img "Random Orbit Sander" [ref=e579]
+            - button "Compare" [ref=e580]
+          - generic [ref=e584]:
+            - heading "Random Orbit Sander" [level=5] [ref=e585]
+            - generic "A = most environmentally friendly, E = higher environmental impact" [ref=e586]:
+              - text: "CO₂:"
+              - generic [ref=e587]: A
+              - generic [ref=e588]: B
+              - generic [ref=e589]: C
+              - generic [ref=e590]: D
+              - generic [ref=e591]: E
+          - generic [ref=e592]: $100.79
+        - 'link "Cordless Drill 20V Compare Cordless Drill 20V CO₂: A B C D E $125.23" [ref=e594] [cursor=pointer]':
+          - /url: /product/01M2JJEVF4N3C1R1FVM1VGTV8V
+          - generic [ref=e595]:
+            - img "Cordless Drill 20V" [ref=e596]
+            - button "Compare" [ref=e597]
+          - generic [ref=e601]:
+            - heading "Cordless Drill 20V" [level=5] [ref=e602]
+            - generic "A = most environmentally friendly, E = higher environmental impact" [ref=e603]:
+              - text: "CO₂:"
+              - generic [ref=e604]: A
+              - generic [ref=e605]: B
+              - generic [ref=e606]: C
+              - generic [ref=e607]: D
+              - generic [ref=e608]: E
+          - generic [ref=e609]: $125.23
+        - 'link "Cordless Drill 24V Compare Cordless Drill 24V CO₂: A B C D E $66.54" [ref=e611] [cursor=pointer]':
+          - /url: /product/01M2JJEVF7Q6PZWDHHW4YWYPBM
+          - generic [ref=e612]:
+            - img "Cordless Drill 24V" [ref=e613]
+            - button "Compare" [ref=e614]
+          - generic [ref=e618]:
+            - heading "Cordless Drill 24V" [level=5] [ref=e619]
+            - generic "A = most environmentally friendly, E = higher environmental impact" [ref=e620]:
+              - text: "CO₂:"
+              - generic [ref=e621]: A
+              - generic [ref=e622]: B
+              - generic [ref=e623]: C
+              - generic [ref=e624]: D
+              - generic [ref=e625]: E
+          - generic [ref=e626]: $66.54
+        - 'link "Cordless Drill 18V Compare Cordless Drill 18V CO₂: A B C D E $119.24" [ref=e628] [cursor=pointer]':
+          - /url: /product/01M2JJEVFB67RZDX0TGVK2675H
+          - generic [ref=e629]:
+            - img "Cordless Drill 18V" [ref=e630]
+            - button "Compare" [ref=e631]
+          - generic [ref=e635]:
+            - heading "Cordless Drill 18V" [level=5] [ref=e636]
+            - generic "A = most environmentally friendly, E = higher environmental impact" [ref=e637]:
+              - text: "CO₂:"
+              - generic [ref=e638]: A
+              - generic [ref=e639]: B
+              - generic [ref=e640]: C
+              - generic [ref=e641]: D
+              - generic [ref=e642]: E
+          - generic [ref=e643]: $119.24
+        - 'link "Cordless Drill 12V Compare Cordless Drill 12V CO₂: A B C D E $46.5" [ref=e645] [cursor=pointer]':
+          - /url: /product/01M2JJEVFD9P9PBVC4M4CP5XNC
+          - generic [ref=e646]:
+            - img "Cordless Drill 12V" [ref=e647]
+            - button "Compare" [ref=e648]
+          - generic [ref=e652]:
+            - heading "Cordless Drill 12V" [level=5] [ref=e653]
+            - generic "A = most environmentally friendly, E = higher environmental impact" [ref=e654]:
+              - text: "CO₂:"
+              - generic [ref=e655]: A
+              - generic [ref=e656]: B
+              - generic [ref=e657]: C
+              - generic [ref=e658]: D
+              - generic [ref=e659]: E
+          - generic [ref=e660]: $46.5
+  - contentinfo [ref=e48]:
+    - generic [ref=e50]:
+      - generic [ref=e51]: Learn & Explore
+      - generic [ref=e52]:
+        - link "Learn Test Automation Hands-on courses for Playwright, Robot Framework, APIs and more" [ref=e54] [cursor=pointer]:
+          - /url: https://onlinecourses.testsmith.io
+          - generic [ref=e57]:
+            - generic [ref=e58]: Learn Test Automation
+            - text: Hands-on courses for Playwright, Robot Framework, APIs and more
+        - link "API Spector Open-source API testing, mocking and contract testing" [ref=e60] [cursor=pointer]:
+          - /url: https://api-spector.dev
+          - generic [ref=e63]:
+            - generic [ref=e64]: API Spector
+            - text: Open-source API testing, mocking and contract testing
+        - link "GitHub Source code, issues and contributions" [ref=e66] [cursor=pointer]:
+          - /url: https://github.com/testsmith-io/practice-software-testing
+          - generic [ref=e69]:
+            - generic [ref=e70]: GitHub
+            - text: Source code, issues and contributions
+    - generic [ref=e71]:
+      - generic [ref=e72]:
+        - text: This is a DEMO application, used for software testing training purpose. |
+        - link "Privacy Policy" [ref=e73] [cursor=pointer]:
+          - /url: /privacy
+        - text: "| Banner photo by"
+        - link "Barn Images" [ref=e74] [cursor=pointer]:
+          - /url: https://unsplash.com/@barnimages
+        - text: "on"
+        - link "Unsplash" [ref=e75] [cursor=pointer]:
+          - /url: https://unsplash.com/photos/t5YUoHW6zRo
+        - text: .
+      - generic [ref=e76]: v2.5 | Built 2026-09-09 | Angular 20.0.5
+  - button "Open chat" [ref=e78] [cursor=pointer]
+  - button "Show live shop activity" [ref=e82] [cursor=pointer]

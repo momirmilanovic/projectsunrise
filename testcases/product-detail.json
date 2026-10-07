@@ -1,0 +1,57 @@
+{
+  "module": "Catalog - Product Detail",
+  "moduleCode": "PDP",
+  "jiraIssue": "KAN-15",
+  "jiraIssueId": null,
+  "zephyrFolder": "nologged",
+  "testCases": [
+    {
+      "id": "PDP-TC-01",
+      "name": "Related products lead to an out-of-stock item that still shows Add to Cart (KAN-15)",
+      "objective": "Verify that the related products section on a product detail page links to another product, and that an out-of-stock product still displays its out-of-stock state and Add to Cart control.",
+      "precondition": "1. User is on the home page.",
+      "priority": "Normal",
+      "status": "Draft",
+      "type": "positive",
+      "severity": "Normal",
+      "labels": [
+        "toolshop",
+        "catalog",
+        "product-detail",
+        "related-products",
+        "out-of-stock",
+        "nologged",
+        "KAN-15"
+      ],
+      "coverage": "KAN-15",
+      "covers_rules": [],
+      "steps": [
+        {
+          "step": "From the home page, select the Pliers product.",
+          "data": "",
+          "expected": "The Pliers product detail page opens."
+        },
+        {
+          "step": "Scroll to the bottom of the Pliers product detail page.",
+          "data": "",
+          "expected": "A \"Related products\" section is displayed at the bottom of the page."
+        },
+        {
+          "step": "Select Long Nose Pliers from the related products section.",
+          "data": "",
+          "expected": "The Long Nose Pliers product detail page opens."
+        },
+        {
+          "step": "Review the Long Nose Pliers product detail page.",
+          "data": "",
+          "expected": "An out-of-stock indicator reading \"Out of stock\" is displayed."
+        },
+        {
+          "step": "Check the Add to Cart control on the Long Nose Pliers page.",
+          "data": "",
+          "expected": "The Add to Cart button is displayed but disabled (the quantity controls are also disabled)."
+        }
+      ]
+    }
+  ]
+}

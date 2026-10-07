@@ -13,8 +13,14 @@ export class CustomerActions extends Actor {
   async viewProductFromHome(productName) {
     await this.homePage.openProductByName(productName);
     const price = (await this.productPage.unitPrice.textContent()).trim();
+    const category = (await this.productPage.categoryTag.textContent()).trim();
+    const brand = (await this.productPage.brandTag.textContent()).trim();
     this.receipts.productPrices = { ...(this.receipts.productPrices ?? {}), [productName]: price };
-    return { productName, price };
+    this.receipts.productDetails = {
+      ...(this.receipts.productDetails ?? {}),
+      [productName]: { price, category, brand },
+    };
+    return { productName, price, category, brand };
   }
 
   async increaseProductQuantity(times) {
@@ -69,6 +75,11 @@ export class CustomerActions extends Actor {
     await this.cartPage.open();
   }
 
+  async continueShopping() {
+    await this.cartPage.continueShopping.click();
+    await this.page.waitForURL((url) => url.pathname === '/');
+  }
+
   async proceedToCheckout() {
     await this.cartPage.proceedToCheckout.click();
   }
@@ -112,9 +123,41 @@ export class CustomerActions extends Actor {
 
   async confirmOrder() {
     await this.checkoutPage.payment.confirm.click();
-    // await this.checkoutPage.confirmation.waitFor();
-    // const invoiceNumber = await extractInvoiceNumber(this.checkoutPage.confirmation);
-    // this.receipts.invoiceNumber = invoiceNumber;
-    // return invoiceNumber;
+  }
+
+  async openContactPage() {
+    await this.contactPage.open();
+  }
+
+  async openContactFromHome() {
+    await this.header.openContact();
+  }
+
+  async fillContactForm(details) {
+    await this.contactPage.fill(details);
+    this.receipts.contact = details;
+    return details;
+  }
+
+  async submitContactForm() {
+    await this.contactPage.submit();
+  }
+
+  async fillAndSubmitContact(details) {
+    await this.fillContactForm(details);
+    await this.submitContactForm();
+  }
+
+  async openRelatedProduct(productName) {
+    await this.productPage.openRelatedProduct(productName);
+    return productName;
+  }
+
+  async addProductToCompare() {
+    await this.productPage.addToCompareButton.click();
+  }
+
+  async goToComparisonFromBar() {
+    await this.comparisonBar.goToComparison();
   }
 }

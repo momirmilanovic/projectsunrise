@@ -1,0 +1,5 @@
+[     253ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.practicesoftwaretesting.com/users/me:0
+[     258ms] [ERROR] ERROR {message: Unauthorized} @ https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:6
+[     289ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.practicesoftwaretesting.com/users/me:0
+[    8331ms] [LOG] Initializing Google Analytics 4: G-0BJFXRKTYC @ https://practicesoftwaretesting.com/chunk-4EZ6YPXQ.js:0
+[    8365ms] [LOG] Google Analytics 4 ready for tracking @ https://practicesoftwaretesting.com/chunk-4EZ6YPXQ.js:0
