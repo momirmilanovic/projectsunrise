@@ -1,0 +1,155 @@
+- generic [ref=f7e1]:
+  - generic [ref=f7e2]:
+    - generic [ref=f7e3]:
+      - text: View the
+      - link "Documentation" [ref=f7e4] [cursor=pointer]:
+        - /url: https://testsmith-io.github.io/practice-software-testing/#/
+      - text: for this application.
+    - generic [ref=f7e5]:
+      - generic [ref=f7e7]:
+        - generic [ref=f7e8]: Practice Black Box Testing & Bug Hunting
+        - button "Testing Guide" [ref=f7e9] [cursor=pointer]
+        - button "🐛 Bug Hunting" [ref=f7e10] [cursor=pointer]
+      - navigation [ref=f7e11]:
+        - generic [ref=f7e12]:
+          - link "Practice Software Testing - Toolshop" [ref=f7e13] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f7e32]:
+            - menubar "Main menu" [ref=f7e33]:
+              - menuitem [ref=f7e34]:
+                - link "Home" [ref=f7e35] [cursor=pointer]:
+                  - /url: /
+              - menuitem [ref=f7e36]:
+                - button "Categories" [ref=f7e37] [cursor=pointer]
+              - menuitem [ref=f7e38]:
+                - link "Contact" [ref=f7e39] [cursor=pointer]:
+                  - /url: /contact
+              - menuitem [ref=f7e40]:
+                - link "Sign in" [ref=f7e41] [cursor=pointer]:
+                  - /url: /auth/login
+              - menuitem [ref=f7e42]:
+                - link "cart" [ref=f7e43] [cursor=pointer]:
+                  - /url: /checkout
+                  - generic [ref=f7e47]: "2"
+            - button "Select language" [ref=f7e49] [cursor=pointer]: EN
+    - generic [ref=f7e205]:
+      - generic [ref=f7e206]:
+        - figure [ref=f7e208]:
+          - img "Pliers" [ref=f7e210]
+          - generic [ref=f7e211]:
+            - text: Photo by
+            - link "Everyday basics" [ref=f7e212] [cursor=pointer]:
+              - /url: https://unsplash.com/@zanardi
+            - text: "on"
+            - link "Unsplash" [ref=f7e213] [cursor=pointer]:
+              - /url: https://unsplash.com/photos/I8eTuMmxIfo
+            - text: .
+        - generic [ref=f7e214]:
+          - heading "Pliers" [level=1] [ref=f7e215]
+          - paragraph [ref=f7e216]:
+            - generic "category" [ref=f7e217]: Pliers
+            - generic "brand" [ref=f7e218]: ForgeFlex Tools
+          - generic [ref=f7e219]: $12.01
+          - generic "A = most environmentally friendly, E = higher environmental impact" [ref=f7e221]:
+            - text: "CO₂:"
+            - generic [ref=f7e222]: A
+            - generic [ref=f7e223]: B
+            - generic [ref=f7e224]: C
+            - generic [ref=f7e225]: D
+            - generic [ref=f7e226]: E
+          - paragraph [ref=f7e227]: Reliable general-purpose pliers crafted from drop-forged carbon steel for long-lasting durability in demanding working conditions. The serrated jaws provide a firm grip on a variety of materials including wire, nails, small fasteners, and irregularly shaped objects. Comfortable rubber-coated handles absorb vibration and reduce hand fatigue during extended use, while the non-slip surface ensures confident handling. The precision pivot joint maintains alignment under load, delivering smooth, controlled jaw action with every squeeze. Heat-treated steel construction resists wear and deformation even under heavy use. A must-have foundational tool for any workshop, equally suited for professional tradespeople and home repair projects.
+          - generic [ref=f7e228]:
+            - button "Decrease quantity" [ref=f7e229] [cursor=pointer]
+            - generic [ref=f7e233]: Quantity
+            - spinbutton "Quantity" [ref=f7e234]: "1"
+            - button "Increase quantity" [ref=f7e235] [cursor=pointer]
+          - generic [ref=f7e239]:
+            - button [active] [ref=f7e240] [cursor=pointer]
+            - button [ref=f7e244] [cursor=pointer]
+            - button [ref=f7e248] [cursor=pointer]
+      - generic [ref=f7e253]:
+        - heading "Specifications" [level=3] [ref=f7e254]
+        - table [ref=f7e255]:
+          - rowgroup [ref=f7e256]:
+            - row [ref=f7e257]:
+              - cell "Handle Material" [ref=f7e258]
+              - cell "Rubber" [ref=f7e259]
+            - row [ref=f7e260]:
+              - cell "Length" [ref=f7e261]
+              - cell "180mm" [ref=f7e262]
+            - row [ref=f7e263]:
+              - cell "Material" [ref=f7e264]
+              - cell "Carbon Steel" [ref=f7e265]
+            - row [ref=f7e266]:
+              - cell "Warranty" [ref=f7e267]
+              - cell "1years" [ref=f7e268]
+            - row [ref=f7e269]:
+              - cell "Weight" [ref=f7e270]
+              - cell "280g" [ref=f7e271]
+      - separator [ref=f7e272]
+      - generic [ref=f7e273]:
+        - heading "Related products" [level=2] [ref=f7e274]
+        - generic [ref=f7e276]:
+          - link [ref=f7e277] [cursor=pointer]:
+            - /url: /product/01M25SX2SFBRCWGPZV6TYM8C3S
+            - img "Combination Pliers" [ref=f7e279]
+            - generic [ref=f7e280]:
+              - heading "Combination Pliers" [level=5] [ref=f7e281]
+              - link "More information" [ref=f7e282]:
+                - /url: "#"
+          - link [ref=f7e283] [cursor=pointer]:
+            - /url: /product/01M25SX2SPX0YP38K5XR1408W9
+            - img "Bolt Cutters" [ref=f7e285]
+            - generic [ref=f7e286]:
+              - heading "Bolt Cutters" [level=5] [ref=f7e287]
+              - link "More information" [ref=f7e288]:
+                - /url: "#"
+          - link [ref=f7e289] [cursor=pointer]:
+            - /url: /product/01M25SX2SS1ECYCFPF5V78HMKB
+            - img "Long Nose Pliers" [ref=f7e291]
+            - generic [ref=f7e292]:
+              - heading "Long Nose Pliers" [level=5] [ref=f7e293]
+              - link "More information" [ref=f7e294]:
+                - /url: "#"
+          - link [ref=f7e295] [cursor=pointer]:
+            - /url: /product/01M25SX2SW8H0TNY6M5DJ0CTXX
+            - img "Slip Joint Pliers" [ref=f7e297]
+            - generic [ref=f7e298]:
+              - heading "Slip Joint Pliers" [level=5] [ref=f7e299]
+              - link "More information" [ref=f7e300]:
+                - /url: "#"
+    - contentinfo [ref=f7e166]:
+      - generic [ref=f7e168]:
+        - generic [ref=f7e169]: Learn & Explore
+        - generic [ref=f7e170]:
+          - link "Learn Test Automation Hands-on courses for Playwright, Robot Framework, APIs and more" [ref=f7e172] [cursor=pointer]:
+            - /url: https://onlinecourses.testsmith.io
+            - generic [ref=f7e175]:
+              - generic [ref=f7e176]: Learn Test Automation
+              - text: Hands-on courses for Playwright, Robot Framework, APIs and more
+          - link "API Spector Open-source API testing, mocking and contract testing" [ref=f7e178] [cursor=pointer]:
+            - /url: https://api-spector.dev
+            - generic [ref=f7e181]:
+              - generic [ref=f7e182]: API Spector
+              - text: Open-source API testing, mocking and contract testing
+          - link "GitHub Source code, issues and contributions" [ref=f7e184] [cursor=pointer]:
+            - /url: https://github.com/testsmith-io/practice-software-testing
+            - generic [ref=f7e187]:
+              - generic [ref=f7e188]: GitHub
+              - text: Source code, issues and contributions
+      - generic [ref=f7e189]:
+        - generic [ref=f7e190]:
+          - text: This is a DEMO application, used for software testing training purpose. |
+          - link "Privacy Policy" [ref=f7e191] [cursor=pointer]:
+            - /url: /privacy
+          - text: "| Banner photo by"
+          - link "Barn Images" [ref=f7e192] [cursor=pointer]:
+            - /url: https://unsplash.com/@barnimages
+          - text: "on"
+          - link "Unsplash" [ref=f7e193] [cursor=pointer]:
+            - /url: https://unsplash.com/photos/t5YUoHW6zRo
+          - text: .
+        - generic [ref=f7e194]: v2.5 | Built 2026-09-09 | Angular 20.0.5
+    - button "Open chat" [ref=f7e196] [cursor=pointer]
+    - button "Show live shop activity" [ref=f7e200] [cursor=pointer]
+  - alert "Product added to shopping cart." [ref=f7e302]

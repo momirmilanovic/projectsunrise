@@ -1,0 +1,155 @@
+- generic [ref=f4e1]:
+  - generic [ref=f4e2]:
+    - generic [ref=f4e3]:
+      - text: View the
+      - link "Documentation" [ref=f4e4] [cursor=pointer]:
+        - /url: https://testsmith-io.github.io/practice-software-testing/#/
+      - text: for this application.
+    - generic [ref=f4e5]:
+      - generic [ref=f4e7]:
+        - generic [ref=f4e8]: Practice Black Box Testing & Bug Hunting
+        - button "Testing Guide" [ref=f4e9] [cursor=pointer]
+        - button "🐛 Bug Hunting" [ref=f4e10] [cursor=pointer]
+      - navigation [ref=f4e11]:
+        - generic [ref=f4e12]:
+          - link "Practice Software Testing - Toolshop" [ref=f4e13] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f4e32]:
+            - menubar "Main menu" [ref=f4e33]:
+              - menuitem [ref=f4e34]:
+                - link "Home" [ref=f4e35] [cursor=pointer]:
+                  - /url: /
+              - menuitem [ref=f4e36]:
+                - button "Categories" [ref=f4e37] [cursor=pointer]
+              - menuitem [ref=f4e38]:
+                - link "Contact" [ref=f4e39] [cursor=pointer]:
+                  - /url: /contact
+              - menuitem [ref=f4e40]:
+                - link "Sign in" [ref=f4e41] [cursor=pointer]:
+                  - /url: /auth/login
+              - menuitem [ref=f4e295]:
+                - link "cart" [ref=f4e296] [cursor=pointer]:
+                  - /url: /checkout
+                  - generic [ref=f4e300]: "1"
+            - button "Select language" [ref=f4e43] [cursor=pointer]: EN
+    - generic [ref=f4e199]:
+      - generic [ref=f4e200]:
+        - figure [ref=f4e202]:
+          - img "Combination Pliers" [ref=f4e204]
+          - generic [ref=f4e205]:
+            - text: Photo by
+            - link "Helinton Fantin" [ref=f4e206] [cursor=pointer]:
+              - /url: https://unsplash.com/@fantin
+            - text: "on"
+            - link "Unsplash" [ref=f4e207] [cursor=pointer]:
+              - /url: https://unsplash.com/photos/W8BNwvOvW4M
+            - text: .
+        - generic [ref=f4e208]:
+          - heading "Combination Pliers" [level=1] [ref=f4e209]
+          - paragraph [ref=f4e210]:
+            - generic "category" [ref=f4e211]: Pliers
+            - generic "brand" [ref=f4e212]: ForgeFlex Tools
+          - generic [ref=f4e213]: $14.15
+          - generic "A = most environmentally friendly, E = higher environmental impact" [ref=f4e215]:
+            - text: "CO₂:"
+            - generic [ref=f4e216]: A
+            - generic [ref=f4e217]: B
+            - generic [ref=f4e218]: C
+            - generic [ref=f4e219]: D
+            - generic [ref=f4e220]: E
+          - paragraph [ref=f4e221]: Versatile combination pliers designed for gripping, bending, and cutting wire with ease. Featuring chrome vanadium steel construction with induction-hardened cutting edges, these pliers deliver excellent grip and leverage for a wide range of tasks. The precision-machined jaws combine flat gripping surfaces with a pipe-grip section and integrated wire cutter for true multi-purpose functionality. Ergonomic bi-component handles reduce hand fatigue during extended use and provide a secure hold even with oily or gloved hands. The joint is precisely fitted to eliminate play and ensure smooth operation over thousands of cycles. Ideal for electricians, mechanics, and DIY enthusiasts tackling everyday projects around the workshop or job site.
+          - generic [ref=f4e222]:
+            - button "Decrease quantity" [ref=f4e223] [cursor=pointer]
+            - generic [ref=f4e227]: Quantity
+            - spinbutton "Quantity" [ref=f4e228]: "1"
+            - button "Increase quantity" [ref=f4e229] [cursor=pointer]
+          - generic [ref=f4e233]:
+            - button [active] [ref=f4e234] [cursor=pointer]
+            - button [ref=f4e238] [cursor=pointer]
+            - button [ref=f4e242] [cursor=pointer]
+      - generic [ref=f4e247]:
+        - heading "Specifications" [level=3] [ref=f4e248]
+        - table [ref=f4e249]:
+          - rowgroup [ref=f4e250]:
+            - row [ref=f4e251]:
+              - cell "Handle Material" [ref=f4e252]
+              - cell "Bi-component" [ref=f4e253]
+            - row [ref=f4e254]:
+              - cell "Length" [ref=f4e255]
+              - cell "200mm" [ref=f4e256]
+            - row [ref=f4e257]:
+              - cell "Material" [ref=f4e258]
+              - cell "Chrome Vanadium Steel" [ref=f4e259]
+            - row [ref=f4e260]:
+              - cell "Warranty" [ref=f4e261]
+              - cell "2years" [ref=f4e262]
+            - row [ref=f4e263]:
+              - cell "Weight" [ref=f4e264]
+              - cell "340g" [ref=f4e265]
+      - separator [ref=f4e266]
+      - generic [ref=f4e267]:
+        - heading "Related products" [level=2] [ref=f4e268]
+        - generic [ref=f4e270]:
+          - link [ref=f4e271] [cursor=pointer]:
+            - /url: /product/01M25SX2SJJSV514M3T6X5C9E8
+            - img "Pliers" [ref=f4e273]
+            - generic [ref=f4e274]:
+              - heading "Pliers" [level=5] [ref=f4e275]
+              - link "More information" [ref=f4e276]:
+                - /url: "#"
+          - link [ref=f4e277] [cursor=pointer]:
+            - /url: /product/01M25SX2SPX0YP38K5XR1408W9
+            - img "Bolt Cutters" [ref=f4e279]
+            - generic [ref=f4e280]:
+              - heading "Bolt Cutters" [level=5] [ref=f4e281]
+              - link "More information" [ref=f4e282]:
+                - /url: "#"
+          - link [ref=f4e283] [cursor=pointer]:
+            - /url: /product/01M25SX2SS1ECYCFPF5V78HMKB
+            - img "Long Nose Pliers" [ref=f4e285]
+            - generic [ref=f4e286]:
+              - heading "Long Nose Pliers" [level=5] [ref=f4e287]
+              - link "More information" [ref=f4e288]:
+                - /url: "#"
+          - link [ref=f4e289] [cursor=pointer]:
+            - /url: /product/01M25SX2SW8H0TNY6M5DJ0CTXX
+            - img "Slip Joint Pliers" [ref=f4e291]
+            - generic [ref=f4e292]:
+              - heading "Slip Joint Pliers" [level=5] [ref=f4e293]
+              - link "More information" [ref=f4e294]:
+                - /url: "#"
+    - contentinfo [ref=f4e160]:
+      - generic [ref=f4e162]:
+        - generic [ref=f4e163]: Learn & Explore
+        - generic [ref=f4e164]:
+          - link "Learn Test Automation Hands-on courses for Playwright, Robot Framework, APIs and more" [ref=f4e166] [cursor=pointer]:
+            - /url: https://onlinecourses.testsmith.io
+            - generic [ref=f4e169]:
+              - generic [ref=f4e170]: Learn Test Automation
+              - text: Hands-on courses for Playwright, Robot Framework, APIs and more
+          - link "API Spector Open-source API testing, mocking and contract testing" [ref=f4e172] [cursor=pointer]:
+            - /url: https://api-spector.dev
+            - generic [ref=f4e175]:
+              - generic [ref=f4e176]: API Spector
+              - text: Open-source API testing, mocking and contract testing
+          - link "GitHub Source code, issues and contributions" [ref=f4e178] [cursor=pointer]:
+            - /url: https://github.com/testsmith-io/practice-software-testing
+            - generic [ref=f4e181]:
+              - generic [ref=f4e182]: GitHub
+              - text: Source code, issues and contributions
+      - generic [ref=f4e183]:
+        - generic [ref=f4e184]:
+          - text: This is a DEMO application, used for software testing training purpose. |
+          - link "Privacy Policy" [ref=f4e185] [cursor=pointer]:
+            - /url: /privacy
+          - text: "| Banner photo by"
+          - link "Barn Images" [ref=f4e186] [cursor=pointer]:
+            - /url: https://unsplash.com/@barnimages
+          - text: "on"
+          - link "Unsplash" [ref=f4e187] [cursor=pointer]:
+            - /url: https://unsplash.com/photos/t5YUoHW6zRo
+          - text: .
+        - generic [ref=f4e188]: v2.5 | Built 2026-09-09 | Angular 20.0.5
+    - button "Open chat" [ref=f4e190] [cursor=pointer]
+    - button "Show live shop activity" [ref=f4e194] [cursor=pointer]
+  - alert "Product added to shopping cart." [ref=f4e302]

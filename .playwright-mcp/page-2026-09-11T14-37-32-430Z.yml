@@ -1,0 +1,206 @@
+- generic [ref=f2e2]:
+  - generic [ref=f2e3]:
+    - text: View the
+    - link "Documentation" [ref=f2e4] [cursor=pointer]:
+      - /url: https://testsmith-io.github.io/practice-software-testing/#/
+    - text: for this application.
+  - generic [ref=f2e5]:
+    - generic [ref=f2e7]:
+      - generic [ref=f2e8]: Practice Black Box Testing & Bug Hunting
+      - button "Testing Guide" [ref=f2e9] [cursor=pointer]
+      - button "🐛 Bug Hunting" [ref=f2e10] [cursor=pointer]
+    - navigation [ref=f2e11]:
+      - generic [ref=f2e12]:
+        - link "Practice Software Testing - Toolshop" [ref=f2e13] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f2e32]:
+          - menubar "Main menu" [ref=f2e33]:
+            - menuitem [ref=f2e34]:
+              - link "Home" [ref=f2e35] [cursor=pointer]:
+                - /url: /
+            - menuitem [ref=f2e36]:
+              - button "Categories" [ref=f2e37] [cursor=pointer]
+            - menuitem [ref=f2e38]:
+              - link "Contact" [ref=f2e39] [cursor=pointer]:
+                - /url: /contact
+            - menuitem [ref=f2e40]:
+              - link "Sign in" [ref=f2e41] [cursor=pointer]:
+                - /url: /auth/login
+          - button "Select language" [ref=f2e43] [cursor=pointer]: EN
+  - generic [ref=f2e48]:
+    - generic [ref=f2e49]:
+      - paragraph [ref=f2e50]:
+        - img "Banner" [ref=f2e51]
+      - separator [ref=f2e52]
+    - generic [ref=f2e53]:
+      - generic [ref=f2e54]:
+        - heading [level=4] [ref=f2e55]
+        - separator [ref=f2e59]
+        - combobox "sort" [ref=f2e62]:
+          - option [selected]
+          - option "Name (A - Z)"
+          - option "Name (Z - A)"
+          - option "Price (High - Low)"
+          - option "Price (Low - High)"
+          - option "CO₂ Rating (A - E)"
+          - option "CO₂ Rating (E - A)"
+        - heading [level=4] [ref=f2e63]
+        - separator [ref=f2e67]
+        - generic "ngx-slider" [ref=f2e69]:
+          - slider "ngx-slider" [ref=f2e74] [cursor=pointer]
+          - slider "ngx-slider-max" [ref=f2e75] [cursor=pointer]
+          - generic [ref=f2e76]: "0"
+          - generic [ref=f2e77]: "200"
+          - generic [ref=f2e78]: "1"
+          - generic [ref=f2e79]: "100"
+        - heading [level=4] [ref=f2e81]
+        - separator [ref=f2e85]
+        - generic [ref=f2e87]:
+          - generic [ref=f2e88]: Search
+          - textbox "Search" [active] [ref=f2e89]
+          - button "X" [ref=f2e90] [cursor=pointer]
+          - button "Search" [ref=f2e91] [cursor=pointer]
+        - heading [level=4] [ref=f2e92]
+        - separator [ref=f2e96]
+        - heading "By category:" [level=4] [ref=f2e97]
+        - group "Categories" [ref=f2e199]:
+          - generic [ref=f2e200]:
+            - generic [ref=f2e201]:
+              - checkbox "Hand Tools" [ref=f2e202]
+              - text: Hand Tools
+            - list [ref=f2e203]:
+              - group "Categories" [ref=f2e204]:
+                - generic [ref=f2e207]:
+                  - checkbox "Hammer" [ref=f2e208]
+                  - text: Hammer
+                - generic [ref=f2e210]:
+                  - checkbox "Hand Saw" [ref=f2e211]
+                  - text: Hand Saw
+                - generic [ref=f2e213]:
+                  - checkbox "Wrench" [ref=f2e214]
+                  - text: Wrench
+                - generic [ref=f2e216]:
+                  - checkbox "Screwdriver" [ref=f2e217]
+                  - text: Screwdriver
+                - generic [ref=f2e219]:
+                  - checkbox "Pliers" [ref=f2e220]
+                  - text: Pliers
+                - generic [ref=f2e222]:
+                  - checkbox "Chisels" [ref=f2e223]
+                  - text: Chisels
+                - generic [ref=f2e225]:
+                  - checkbox "Measures" [ref=f2e226]
+                  - text: Measures
+          - generic [ref=f2e227]:
+            - generic [ref=f2e228]:
+              - checkbox "Power Tools" [ref=f2e229]
+              - text: Power Tools
+            - list [ref=f2e230]:
+              - group "Categories" [ref=f2e231]:
+                - generic [ref=f2e234]:
+                  - checkbox "Grinder" [ref=f2e235]
+                  - text: Grinder
+                - generic [ref=f2e237]:
+                  - checkbox "Sander" [ref=f2e238]
+                  - text: Sander
+                - generic [ref=f2e240]:
+                  - checkbox "Saw" [ref=f2e241]
+                  - text: Saw
+                - generic [ref=f2e243]:
+                  - checkbox "Drill" [ref=f2e244]
+                  - text: Drill
+          - generic [ref=f2e245]:
+            - generic [ref=f2e246]:
+              - checkbox "Other" [ref=f2e247]
+              - text: Other
+            - list [ref=f2e248]:
+              - group "Categories" [ref=f2e249]:
+                - generic [ref=f2e252]:
+                  - checkbox "Tool Belts" [ref=f2e253]
+                  - text: Tool Belts
+                - generic [ref=f2e255]:
+                  - checkbox "Storage Solutions" [ref=f2e256]
+                  - text: Storage Solutions
+                - generic [ref=f2e258]:
+                  - checkbox "Workbench" [ref=f2e259]
+                  - text: Workbench
+                - generic [ref=f2e261]:
+                  - checkbox "Safety Gear" [ref=f2e262]
+                  - text: Safety Gear
+                - generic [ref=f2e264]:
+                  - checkbox "Fasteners" [ref=f2e265]
+                  - text: Fasteners
+        - heading "By brand:" [level=4] [ref=f2e100]
+        - group "Brands" [ref=f2e266]:
+          - generic [ref=f2e268]:
+            - checkbox "ForgeFlex Tools" [ref=f2e269]
+            - text: ForgeFlex Tools
+          - generic [ref=f2e271]:
+            - checkbox "MightyCraft Hardware" [ref=f2e272]
+            - text: MightyCraft Hardware
+          - generic [ref=f2e274]:
+            - checkbox "some name" [ref=f2e275]
+            - text: some name
+          - generic [ref=f2e277]:
+            - checkbox "some name" [ref=f2e278]
+            - text: some name
+          - generic [ref=f2e280]:
+            - checkbox "some name" [ref=f2e281]
+            - text: some name
+        - heading "Sustainability:" [level=4] [ref=f2e103]
+        - group "Eco-Friendly Products" [ref=f2e104]:
+          - generic [ref=f2e107]:
+            - checkbox "Show only eco-friendly products" [ref=f2e108]
+            - text: Show only eco-friendly products
+      - generic [ref=f2e109]:
+        - 'heading "Searched for: Sledgehammer" [level=3] [ref=f2e282]'
+        - paragraph [ref=f2e283]: 1 product found for 'Sledgehammer'
+        - 'link "Sledgehammer Compare Sledgehammer CO₂: A B C D E $17.75" [ref=f2e285] [cursor=pointer]':
+          - /url: /product/01M28C9W5ET7BX36YP4HN4KMHW
+          - generic [ref=f2e286]:
+            - img "Sledgehammer" [ref=f2e287]
+            - button "Compare" [ref=f2e288]
+          - generic [ref=f2e292]:
+            - heading "Sledgehammer" [level=5] [ref=f2e293]
+            - generic "A = most environmentally friendly, E = higher environmental impact" [ref=f2e294]:
+              - text: "CO₂:"
+              - generic [ref=f2e295]: A
+              - generic [ref=f2e296]: B
+              - generic [ref=f2e297]: C
+              - generic [ref=f2e298]: D
+              - generic [ref=f2e299]: E
+          - generic [ref=f2e300]: $17.75
+  - contentinfo [ref=f2e160]:
+    - generic [ref=f2e162]:
+      - generic [ref=f2e163]: Learn & Explore
+      - generic [ref=f2e164]:
+        - link "Learn Test Automation Hands-on courses for Playwright, Robot Framework, APIs and more" [ref=f2e166] [cursor=pointer]:
+          - /url: https://onlinecourses.testsmith.io
+          - generic [ref=f2e169]:
+            - generic [ref=f2e170]: Learn Test Automation
+            - text: Hands-on courses for Playwright, Robot Framework, APIs and more
+        - link "API Spector Open-source API testing, mocking and contract testing" [ref=f2e172] [cursor=pointer]:
+          - /url: https://api-spector.dev
+          - generic [ref=f2e175]:
+            - generic [ref=f2e176]: API Spector
+            - text: Open-source API testing, mocking and contract testing
+        - link "GitHub Source code, issues and contributions" [ref=f2e178] [cursor=pointer]:
+          - /url: https://github.com/testsmith-io/practice-software-testing
+          - generic [ref=f2e181]:
+            - generic [ref=f2e182]: GitHub
+            - text: Source code, issues and contributions
+    - generic [ref=f2e183]:
+      - generic [ref=f2e184]:
+        - text: This is a DEMO application, used for software testing training purpose. |
+        - link "Privacy Policy" [ref=f2e185] [cursor=pointer]:
+          - /url: /privacy
+        - text: "| Banner photo by"
+        - link "Barn Images" [ref=f2e186] [cursor=pointer]:
+          - /url: https://unsplash.com/@barnimages
+        - text: "on"
+        - link "Unsplash" [ref=f2e187] [cursor=pointer]:
+          - /url: https://unsplash.com/photos/t5YUoHW6zRo
+        - text: .
+      - generic [ref=f2e188]: v2.5 | Built 2026-09-09 | Angular 20.0.5
+  - button "Open chat" [ref=f2e190] [cursor=pointer]
+  - button "Show live shop activity" [ref=f2e194] [cursor=pointer]

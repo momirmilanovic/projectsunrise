@@ -1,0 +1,101 @@
+- generic [ref=f8e2]:
+  - generic [ref=f8e3]:
+    - text: View the
+    - link "Documentation" [ref=f8e4] [cursor=pointer]:
+      - /url: https://testsmith-io.github.io/practice-software-testing/#/
+    - text: for this application.
+  - generic [ref=f8e5]:
+    - generic [ref=f8e7]:
+      - generic [ref=f8e8]: Practice Black Box Testing & Bug Hunting
+      - button "Testing Guide" [ref=f8e9] [cursor=pointer]
+      - button "🐛 Bug Hunting" [ref=f8e10] [cursor=pointer]
+    - navigation [ref=f8e11]:
+      - generic [ref=f8e12]:
+        - link "Practice Software Testing - Toolshop" [ref=f8e13] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f8e32]:
+          - menubar "Main menu" [ref=f8e33]:
+            - menuitem [ref=f8e34]:
+              - link "Home" [ref=f8e35] [cursor=pointer]:
+                - /url: /
+            - menuitem [ref=f8e36]:
+              - button "Categories" [ref=f8e37] [cursor=pointer]
+            - menuitem [ref=f8e38]:
+              - link "Contact" [ref=f8e39] [cursor=pointer]:
+                - /url: /contact
+            - menuitem [ref=f8e40]:
+              - link "Sign in" [ref=f8e41] [cursor=pointer]:
+                - /url: /auth/login
+          - button "Select language" [ref=f8e43] [cursor=pointer]: EN
+  - generic [ref=f8e51]:
+    - heading "Contact" [level=3] [ref=f8e52]
+    - generic [ref=f8e54]:
+      - generic [ref=f8e55]:
+        - generic [ref=f8e57]:
+          - generic [ref=f8e58]: First name
+          - textbox "First name" [ref=f8e59]:
+            - /placeholder: Your first name *
+        - generic [ref=f8e61]:
+          - generic [ref=f8e62]: Last name
+          - textbox "Last name" [ref=f8e63]:
+            - /placeholder: Your last name *
+        - generic [ref=f8e64]:
+          - generic [ref=f8e65]: Email address
+          - textbox "Email address" [ref=f8e66]:
+            - /placeholder: Your email *
+      - generic [ref=f8e67]:
+        - generic [ref=f8e69]:
+          - generic [ref=f8e70]: Subject
+          - combobox "Subject" [ref=f8e71]:
+            - option "Customer service"
+            - option "Webmaster"
+            - option "Return"
+            - option "Payments"
+            - option "Warranty"
+            - option "Status of my order"
+        - generic [ref=f8e72]:
+          - generic [ref=f8e73]: Message *
+          - textbox "Message *" [ref=f8e75]
+        - generic [ref=f8e76]:
+          - generic [ref=f8e77]: Attachment
+          - generic [ref=f8e78]:
+            - button "Attachment" [ref=f8e79] [cursor=pointer]
+            - generic [ref=f8e80]:
+              - text: Only files with the
+              - strong [ref=f8e81]: txt
+              - text: extension are allowed, and files must be 0kb.
+        - button "Send" [ref=f8e83] [cursor=pointer]
+  - contentinfo [ref=f8e85]:
+    - generic [ref=f8e87]:
+      - generic [ref=f8e88]: Learn & Explore
+      - generic [ref=f8e89]:
+        - link "Learn Test Automation Hands-on courses for Playwright, Robot Framework, APIs and more" [ref=f8e91] [cursor=pointer]:
+          - /url: https://onlinecourses.testsmith.io
+          - generic [ref=f8e94]:
+            - generic [ref=f8e95]: Learn Test Automation
+            - text: Hands-on courses for Playwright, Robot Framework, APIs and more
+        - link "API Spector Open-source API testing, mocking and contract testing" [ref=f8e97] [cursor=pointer]:
+          - /url: https://api-spector.dev
+          - generic [ref=f8e100]:
+            - generic [ref=f8e101]: API Spector
+            - text: Open-source API testing, mocking and contract testing
+        - link "GitHub Source code, issues and contributions" [ref=f8e103] [cursor=pointer]:
+          - /url: https://github.com/testsmith-io/practice-software-testing
+          - generic [ref=f8e106]:
+            - generic [ref=f8e107]: GitHub
+            - text: Source code, issues and contributions
+    - generic [ref=f8e108]:
+      - generic [ref=f8e109]:
+        - text: This is a DEMO application, used for software testing training purpose. |
+        - link "Privacy Policy" [ref=f8e110] [cursor=pointer]:
+          - /url: /privacy
+        - text: "| Banner photo by"
+        - link "Barn Images" [ref=f8e111] [cursor=pointer]:
+          - /url: https://unsplash.com/@barnimages
+        - text: "on"
+        - link "Unsplash" [ref=f8e112] [cursor=pointer]:
+          - /url: https://unsplash.com/photos/t5YUoHW6zRo
+        - text: .
+      - generic [ref=f8e113]: v2.5 | Built 2026-09-09 | Angular 20.0.5
+  - button "Open chat" [ref=f8e115] [cursor=pointer]
+  - button "Show live shop activity" [ref=f8e119] [cursor=pointer]

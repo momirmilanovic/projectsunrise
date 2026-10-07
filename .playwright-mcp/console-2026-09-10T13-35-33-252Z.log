@@ -1,0 +1,10 @@
+[     493ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.practicesoftwaretesting.com/users/me:0
+[     540ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://practicesoftwaretesting.com/auth/login:0
+[     561ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.practicesoftwaretesting.com/users/me:0
+[     562ms] [ERROR] ERROR {message: Unauthorized} @ https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:6
+[  171594ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.practicesoftwaretesting.com/users/login:0
+[  193462ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.practicesoftwaretesting.com/users/login:0
+[  196505ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.practicesoftwaretesting.com/users/login:0
+[  214736ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.practicesoftwaretesting.com/users/me:0
+[  214737ms] [ERROR] ERROR {message: Unauthorized} @ https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:6
+[  218193ms] [WARNING] The resource https://practicesoftwaretesting.com/assets/img/barn-2400x1600.avif was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://practicesoftwaretesting.com/account:0

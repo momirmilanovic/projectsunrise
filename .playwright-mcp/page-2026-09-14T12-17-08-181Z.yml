@@ -1,0 +1,158 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - text: View the
+      - link "Documentation" [ref=e4] [cursor=pointer]:
+        - /url: https://testsmith-io.github.io/practice-software-testing/#/
+      - text: for this application.
+    - generic [ref=e5]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: Practice Black Box Testing & Bug Hunting
+        - button "Testing Guide" [ref=e9] [cursor=pointer]
+        - button "🐛 Bug Hunting" [ref=e10] [cursor=pointer]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Practice Software Testing - Toolshop" [ref=e13] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e32]:
+            - menubar "Main menu" [ref=e33]:
+              - menuitem [ref=e34]:
+                - link "Home" [ref=e35] [cursor=pointer]:
+                  - /url: /
+              - menuitem [ref=e36]:
+                - button "Categories" [ref=e37] [cursor=pointer]
+              - menuitem [ref=e38]:
+                - link "Contact" [ref=e39] [cursor=pointer]:
+                  - /url: /contact
+              - menuitem [ref=e40]:
+                - link "Sign in" [ref=e41] [cursor=pointer]:
+                  - /url: /auth/login
+              - menuitem [ref=e498]:
+                - link "cart" [ref=e499] [cursor=pointer]:
+                  - /url: /checkout
+                  - generic [ref=e503]: "1"
+            - button "Select language" [ref=e43] [cursor=pointer]: EN
+    - generic [ref=e399]:
+      - generic [ref=e400]:
+        - figure [ref=e402]:
+          - img "Bolt Cutters" [ref=e404]
+          - generic [ref=e405]:
+            - text: Photo by
+            - link "Michael Dziedzic" [ref=e406] [cursor=pointer]:
+              - /url: https://unsplash.com/@lazycreekimages
+            - text: "on"
+            - link "Unsplash" [ref=e407] [cursor=pointer]:
+              - /url: https://unsplash.com/photos/pM9pkc9J918
+            - text: .
+        - generic [ref=e408]:
+          - heading "Bolt Cutters" [level=1] [ref=e409]
+          - paragraph [ref=e410]:
+            - generic "category" [ref=e411]: Pliers
+            - generic "brand" [ref=e412]: MightyCraft Hardware
+          - generic [ref=e413]: $48.41
+          - generic "A = most environmentally friendly, E = higher environmental impact" [ref=e415]:
+            - text: "CO₂:"
+            - generic [ref=e416]: A
+            - generic [ref=e417]: B
+            - generic [ref=e418]: C
+            - generic [ref=e419]: D
+            - generic [ref=e420]: E
+          - paragraph [ref=e421]: Heavy-duty bolt cutters engineered to slice through hardened bolts, chains, padlocks, and wire fencing with minimal effort. The compound leverage mechanism multiplies your cutting force by a factor of 30, enabling clean cuts through materials up to 10mm in diameter. Hardened alloy steel blades are precisely ground and heat-treated to maintain a sharp edge through years of repeated use on tough materials. Ergonomic rubber grips and the generous 750mm handle length provide excellent control, leverage, and reach during overhead or awkward-angle cuts. An adjustable blade tension screw lets you fine-tune the jaw alignment for optimal cutting performance. Built for demolition crews, locksmiths, fencing contractors, and maintenance professionals who need reliable cutting power day after day.
+          - generic [ref=e422]:
+            - button "Decrease quantity" [ref=e423] [cursor=pointer]
+            - generic [ref=e427]: Quantity
+            - spinbutton "Quantity" [ref=e428]: "1"
+            - button "Increase quantity" [ref=e429] [cursor=pointer]
+          - generic [ref=e433]:
+            - button [active] [ref=e434] [cursor=pointer]
+            - button [ref=e438] [cursor=pointer]
+            - button [ref=e442] [cursor=pointer]
+      - generic [ref=e447]:
+        - heading "Specifications" [level=3] [ref=e448]
+        - table [ref=e449]:
+          - rowgroup [ref=e450]:
+            - row [ref=e451]:
+              - cell "Handle Material" [ref=e452]
+              - cell "Rubber" [ref=e453]
+            - row [ref=e454]:
+              - cell "Length" [ref=e455]
+              - cell "750mm" [ref=e456]
+            - row [ref=e457]:
+              - cell "Material" [ref=e458]
+              - cell "Hardened Steel" [ref=e459]
+            - row [ref=e460]:
+              - cell "Max Cutting Capacity" [ref=e461]
+              - cell "10mm" [ref=e462]
+            - row [ref=e463]:
+              - cell "Warranty" [ref=e464]
+              - cell "3years" [ref=e465]
+            - row [ref=e466]:
+              - cell "Weight" [ref=e467]
+              - cell "2100g" [ref=e468]
+      - separator [ref=e469]
+      - generic [ref=e470]:
+        - heading "Related products" [level=2] [ref=e471]
+        - generic [ref=e473]:
+          - link [ref=e474] [cursor=pointer]:
+            - /url: /product/01M2FWMBFP10R9BXY1P938R1M6
+            - img "Combination Pliers" [ref=e476]
+            - generic [ref=e477]:
+              - heading "Combination Pliers" [level=5] [ref=e478]
+              - link "More information" [ref=e479]:
+                - /url: "#"
+          - link [ref=e480] [cursor=pointer]:
+            - /url: /product/01M2FWMBG18R5X23T041A6348B
+            - img "Pliers" [ref=e482]
+            - generic [ref=e483]:
+              - heading "Pliers" [level=5] [ref=e484]
+              - link "More information" [ref=e485]:
+                - /url: "#"
+          - link [ref=e486] [cursor=pointer]:
+            - /url: /product/01M2FWMBG9PZJ89T7MFC2RCCPS
+            - img "Long Nose Pliers" [ref=e488]
+            - generic [ref=e489]:
+              - heading "Long Nose Pliers" [level=5] [ref=e490]
+              - link "More information" [ref=e491]:
+                - /url: "#"
+          - link [ref=e492] [cursor=pointer]:
+            - /url: /product/01M2FWMBGEHE4AGSETHF0BVS51
+            - img "Slip Joint Pliers" [ref=e494]
+            - generic [ref=e495]:
+              - heading "Slip Joint Pliers" [level=5] [ref=e496]
+              - link "More information" [ref=e497]:
+                - /url: "#"
+    - contentinfo [ref=e48]:
+      - generic [ref=e50]:
+        - generic [ref=e51]: Learn & Explore
+        - generic [ref=e52]:
+          - link "Learn Test Automation Hands-on courses for Playwright, Robot Framework, APIs and more" [ref=e54] [cursor=pointer]:
+            - /url: https://onlinecourses.testsmith.io
+            - generic [ref=e57]:
+              - generic [ref=e58]: Learn Test Automation
+              - text: Hands-on courses for Playwright, Robot Framework, APIs and more
+          - link "API Spector Open-source API testing, mocking and contract testing" [ref=e60] [cursor=pointer]:
+            - /url: https://api-spector.dev
+            - generic [ref=e63]:
+              - generic [ref=e64]: API Spector
+              - text: Open-source API testing, mocking and contract testing
+          - link "GitHub Source code, issues and contributions" [ref=e66] [cursor=pointer]:
+            - /url: https://github.com/testsmith-io/practice-software-testing
+            - generic [ref=e69]:
+              - generic [ref=e70]: GitHub
+              - text: Source code, issues and contributions
+      - generic [ref=e71]:
+        - generic [ref=e72]:
+          - text: This is a DEMO application, used for software testing training purpose. |
+          - link "Privacy Policy" [ref=e73] [cursor=pointer]:
+            - /url: /privacy
+          - text: "| Banner photo by"
+          - link "Barn Images" [ref=e74] [cursor=pointer]:
+            - /url: https://unsplash.com/@barnimages
+          - text: "on"
+          - link "Unsplash" [ref=e75] [cursor=pointer]:
+            - /url: https://unsplash.com/photos/t5YUoHW6zRo
+          - text: .
+        - generic [ref=e76]: v2.5 | Built 2026-09-09 | Angular 20.0.5
+    - button "Open chat" [ref=e78] [cursor=pointer]
+    - button "Show live shop activity" [ref=e82] [cursor=pointer]
+  - alert "Product added to shopping cart." [ref=e505]
